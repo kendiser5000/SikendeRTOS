@@ -1,0 +1,44 @@
+Dependencies for Project 'SikendeRTOS', Target 'SikendeRTOS': (DO NOT MODIFY !)
+F (.\Src\main.c)(0x5D09B825)(-c --cpu Cortex-M4 -D__MICROLIB -g -O0 --apcs=interwork --split_sections --signed_chars -I .\ -I .\CMSIS -I .\Inc -I .\Src -I .\Objects -I .\Listings --C99-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\TI\TM4C123-D__UVISION_VERSION="525" -DTM4C123GH6PM-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (.\Inc\OS.h)(0x5D09B504)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F920E)
+I (.\Inc\PLL.h)(0x5D085C19)
+I (.\Inc\tm4c123gh6pm.h)(0x5D085C1A)
+I (.\Inc\UART0.h)(0x5D09B1AA)
+I (.\Inc\Interpreter.h)(0x5D09B835)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599F920C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599F920E)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599F920C)
+F (.\Src\Interpreter.c)(0x5D09B84F)(-c --cpu Cortex-M4 -D__MICROLIB -g -O0 --apcs=interwork --split_sections --signed_chars -I .\ -I .\CMSIS -I .\Inc -I .\Src -I .\Objects -I .\Listings --C99-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\TI\TM4C123-D__UVISION_VERSION="525" -DTM4C123GH6PM-o .\objects\interpreter.o --omf_browse .\objects\interpreter.crf --depend .\objects\interpreter.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F920E)
+I (.\Inc\UART0.h)(0x5D09B1AA)
+I (.\Inc\OS.h)(0x5D09B504)
+I (.\Inc\PLL.h)(0x5D085C19)
+I (.\Inc\tm4c123gh6pm.h)(0x5D085C1A)
+F (.\Src\OS.c)(0x5D09B8CC)(-c --cpu Cortex-M4 -D__MICROLIB -g -O0 --apcs=interwork --split_sections --signed_chars -I .\ -I .\CMSIS -I .\Inc -I .\Src -I .\Objects -I .\Listings --C99-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\TI\TM4C123-D__UVISION_VERSION="525" -DTM4C123GH6PM-o .\objects\os.o --omf_browse .\objects\os.crf --depend .\objects\os.d)
+I (.\Inc\OS.h)(0x5D09B504)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F920E)
+I (.\Inc\PLL.h)(0x5D085C19)
+I (.\Inc\tm4c123gh6pm.h)(0x5D085C1A)
+I (.\Inc\UART0.h)(0x5D09B1AA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599F920E)
+F (.\Src\PLL.c)(0x5D09B514)(-c --cpu Cortex-M4 -D__MICROLIB -g -O0 --apcs=interwork --split_sections --signed_chars -I .\ -I .\CMSIS -I .\Inc -I .\Src -I .\Objects -I .\Listings --C99-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\TI\TM4C123-D__UVISION_VERSION="525" -DTM4C123GH6PM-o .\objects\pll.o --omf_browse .\objects\pll.crf --depend .\objects\pll.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F920E)
+I (.\Inc\PLL.h)(0x5D085C19)
+I (.\Inc\tm4c123gh6pm.h)(0x5D085C1A)
+F (.\Src\OSasm.s)(0x5D09B836)(--cpu Cortex-M4 -g --apcs=interwork --pd "__MICROLIB SETA 1"-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\TI\TM4C123--pd "__UVISION_VERSION SETA 525"--list .\listings\osasm.lst --xref -o .\objects\osasm.o --depend .\objects\osasm.d)
+F (.\Src\UART0.c)(0x5D09B8BE)(-c --cpu Cortex-M4 -D__MICROLIB -g -O0 --apcs=interwork --split_sections --signed_chars -I .\ -I .\CMSIS -I .\Inc -I .\Src -I .\Objects -I .\Listings --C99-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\TI\TM4C123-D__UVISION_VERSION="525" -DTM4C123GH6PM-o .\objects\uart0.o --omf_browse .\objects\uart0.crf --depend .\objects\uart0.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F920E)
+I (.\Inc\tm4c123gh6pm.h)(0x5D085C1A)
+I (.\Inc\UART0.h)(0x5D09B1AA)
+I (.\Inc\OS.h)(0x5D09B504)
+I (.\Inc\PLL.h)(0x5D085C19)
+I (.\Inc\FIFO.h)(0x5CC7B6D8)
+F (.\Inc\tm4c123gh6pm.h)(0x5D085C1A)()
+F (.\Inc\retarget.h)(0x5D085C19)()
+F (.\Inc\PLL.h)(0x5D085C19)()
+F (.\Inc\OS.h)(0x5D09B504)()
+F (.\Inc\Interpreter.h)(0x5D09B835)()
+F (.\Inc\UART0.h)(0x5D09B1AA)()
+F (.\Inc\FIFO.h)(0x5CC7B6D8)()
+F (.\CMSIS\startup.s)(0x5D085C18)(--cpu Cortex-M4 -g --apcs=interwork --pd "__MICROLIB SETA 1"-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\TI\TM4C123--pd "__UVISION_VERSION SETA 525"--list .\listings\startup.lst --xref -o .\objects\startup.o --depend .\objects\startup.d)
