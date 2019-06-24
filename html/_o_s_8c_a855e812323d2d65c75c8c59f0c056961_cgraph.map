@@ -1,0 +1,6 @@
+<map id="OS_Fifo_Init" name="OS_Fifo_Init">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,99,57"/>
+<area shape="rect" id="node2" href="$startup_8h.html#a2bd85031589c754845b826ef8a50fe15" title="Start Criticat Sections, Disable Global Interrupts." alt="" coords="325,5,416,32"/>
+<area shape="rect" id="node3" href="$_o_s_8c.html#af580c6222330cc3d214763ddac7800b9" title=" " alt="" coords="147,31,277,57"/>
+<area shape="rect" id="node4" href="$startup_8h.html#a334154d527e554c179f59f15789a9034" title="End of critical section (ISR = prev ISR) @parameter sr previously saved PSR." alt="" coords="328,68,413,95"/>
+</map>

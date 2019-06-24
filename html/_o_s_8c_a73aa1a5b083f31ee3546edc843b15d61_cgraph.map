@@ -1,0 +1,11 @@
+<map id="GPIOPortF_Handler" name="GPIOPortF_Handler">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,143,83"/>
+<area shape="rect" id="node2" href="$_o_s_8c.html#a4de0f2404bd5b73fc9cf09c0a0b868ee" title=" " alt="" coords="193,5,304,32"/>
+<area shape="rect" id="node3" href="$_o_s_8c.html#aa8fe30cee9323636f35e332f22aee2f0" title="Debounce_SW1 debounce switch 1 with sleep, easier than timer maybe?" alt="" coords="191,107,307,133"/>
+<area shape="rect" id="node9" href="$_o_s_8c.html#afca5c039908507f4bbbad45b959a587b" title="Debounce_SW2 debounce switch 2 with sleep, easier than timer maybe?" alt="" coords="191,56,307,83"/>
+<area shape="rect" id="node4" href="$_o_s_8c.html#aeeb2aca9e1a16738a5d82353b2d497ac" title=" " alt="" coords="355,107,436,133"/>
+<area shape="rect" id="node8" href="$_o_s_8c.html#a8e991f4f2576c5cfec04ef5f37aabea5" title=" " alt="" coords="362,56,429,83"/>
+<area shape="rect" id="node5" href="$startup_8h.html#ac866dbaf7b167e5c46bb33de42eee84d" title="Disable Global Interrupts (ISR = 1)" alt="" coords="496,56,615,83"/>
+<area shape="rect" id="node6" href="$_o_s_8c.html#a4e71587568a2a48931a35615cad1b5db" title=" " alt="" coords="506,157,605,184"/>
+<area shape="rect" id="node7" href="$_o_s_8c.html#a20f49b8f1f94c048fafb8c21260105af" title=" " alt="" coords="484,107,627,133"/>
+</map>

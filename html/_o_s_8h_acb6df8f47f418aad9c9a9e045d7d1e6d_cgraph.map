@@ -1,0 +1,10 @@
+<map id="OS_Init" name="OS_Init">
+<area shape="rect" id="node1" title="OS_Init initialize operating system, disable interrupts until OS_Launch initialize OS controlled I/O:..." alt="" coords="5,81,71,108"/>
+<area shape="rect" id="node2" href="$_o_s_8c.html#a682f413264c38d624e690a11e1640e92" title=" " alt="" coords="119,5,264,32"/>
+<area shape="rect" id="node3" href="$_o_s_8c.html#a4e1ed1b33e454c5906df521dcec8a3a6" title=" " alt="" coords="139,56,243,83"/>
+<area shape="rect" id="node7" href="$_o_s_8c.html#aba7f27cef9b384cd94fb33240ea3a9c3" title=" " alt="" coords="147,107,235,133"/>
+<area shape="rect" id="node8" href="$_o_s_8c.html#aeb71ef4b996788e4aa8cda6ef617f58f" title="SysTick_Init initialize Systick interrupt and values." alt="" coords="145,157,238,184"/>
+<area shape="rect" id="node4" href="$_o_s_8c.html#ad3705c1701a491c3af4be5117ac16458" title=" " alt="" coords="312,56,407,83"/>
+<area shape="rect" id="node5" href="$startup_8h.html#a2bd85031589c754845b826ef8a50fe15" title="Start Criticat Sections, Disable Global Interrupts." alt="" coords="455,31,545,57"/>
+<area shape="rect" id="node6" href="$startup_8h.html#a334154d527e554c179f59f15789a9034" title="End of critical section (ISR = prev ISR) @parameter sr previously saved PSR." alt="" coords="457,81,543,108"/>
+</map>

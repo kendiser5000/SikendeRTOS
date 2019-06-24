@@ -1,20 +1,9 @@
 /**
 * @file FIFO.h
-* @brief For creating FIFOs
-*
+* @brief Provides Functions to initialize FIFO, uses index implementation and macro
 * @author Valvano
-*
 * @date 2/04/2019
 */
-// FIFO.h
-// Runs on any LM3Sxxx
-// Provide functions that initialize a FIFO, put data in, get data out,
-// and return the current size.  The file includes a transmit FIFO
-// using index implementation and a receive FIFO using pointer
-// implementation.  Other index or pointer implementation FIFOs can be
-// created using the macros supplied at the end of the file.
-// Daniel Valvano
-// June 16, 2011
 
 /* This example accompanies the book
    "Embedded Systems: Real Time Interfacing to Arm Cortex M Microcontrollers",
@@ -36,9 +25,7 @@
 #ifndef __FIFO_H__
 #define __FIFO_H__
 
-long StartCritical (void);    // previous I bit, disable interrupts
-void EndCritical(long sr);    // restore I bit to previous value
-
+#include "startup.h"
 
 
 // macro to create an index FIFO

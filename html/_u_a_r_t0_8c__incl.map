@@ -1,0 +1,13 @@
+<map id="SikenderOS/HAL/UART0.c" name="SikenderOS/HAL/UART0.c">
+<area shape="rect" id="node1" title=" " alt="" coords="231,5,409,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="161,453,226,480"/>
+<area shape="rect" id="node3" href="$tm4c123gh6pm_8h.html" title="Register location header of TM4C123GH6PM." alt="" coords="311,304,433,331"/>
+<area shape="rect" id="node4" href="$_u_a_r_t0_8h.html" title=" " alt="" coords="76,304,151,331"/>
+<area shape="rect" id="node7" href="$_f_i_f_o_8h.html" title="Provides Functions to initialize FIFO, uses index implementation and macro." alt="" coords="253,80,315,107"/>
+<area shape="rect" id="node5" href="$_o_s_8h.html" title="Functions for OS." alt="" coords="23,379,75,405"/>
+<area shape="rect" id="node6" href="$_o_s_config_8h.html" title="Configuration setup for OS." alt="" coords="5,453,93,480"/>
+<area shape="rect" id="node8" href="$startup_8h.html" title="Contains Enable/Disable Interrupts, Start/EndCritical from startup file Used to control global ISR fl..." alt="" coords="245,155,318,181"/>
+<area shape="rect" id="node9" href="$cpu_8h.html" title="Contains CPU Initialization and Register functions/definitions." alt="" coords="249,229,303,256"/>
+<area shape="rect" id="node10" href="$_p_l_l_8h.html" title="Sets Clock Speed." alt="" coords="177,304,233,331"/>
+<area shape="rect" id="node11" href="$cpu__vars_8h.html" title="Contains CPU/Compilter variables." alt="" coords="151,379,235,405"/>
+</map>

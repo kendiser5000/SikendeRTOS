@@ -1,0 +1,15 @@
+<map id="StartCritical" name="StartCritical">
+<area shape="rect" id="node1" title="Start Criticat Sections, Disable Global Interrupts." alt="" coords="511,208,601,235"/>
+<area shape="rect" id="node2" href="$_o_s_8h.html#af580c6222330cc3d214763ddac7800b9" title=" " alt="" coords="328,5,459,32"/>
+<area shape="rect" id="node3" href="$_o_s_8h.html#aad29612829941c857ed685f40e193cd0" title=" " alt="" coords="356,56,431,83"/>
+<area shape="rect" id="node4" href="$_o_s_8h.html#a0c4d587c411a23652529110910261fde" title=" " alt="" coords="351,107,435,133"/>
+<area shape="rect" id="node5" href="$_o_s_8h.html#aacf0c377b570fc63b103c57e0fbc7acd" title="Signal semaphore to be free, set to 1." alt="" coords="348,157,439,184"/>
+<area shape="rect" id="node6" href="$_o_s_8c.html#ad3705c1701a491c3af4be5117ac16458" title=" " alt="" coords="346,208,441,235"/>
+<area shape="rect" id="node9" href="$_o_s_8c.html#aac16da3d9c4e8f625e668941dd9cd799" title=" " alt="" coords="324,259,463,285"/>
+<area shape="rect" id="node11" href="$_o_s_8c.html#a60b120bb4936dbe4b7841a6c68fa559a" title=" " alt="" coords="324,309,463,336"/>
+<area shape="rect" id="node12" href="$_o_s_8h.html#a855e812323d2d65c75c8c59f0c056961" title=" " alt="" coords="347,360,440,387"/>
+<area shape="rect" id="node13" href="$_o_s_8c.html#a71c34d8b7ab93e5b9ecea255b8eb95c2" title=" " alt="" coords="346,411,441,437"/>
+<area shape="rect" id="node7" href="$_o_s_8c.html#a4e1ed1b33e454c5906df521dcec8a3a6" title=" " alt="" coords="145,208,249,235"/>
+<area shape="rect" id="node8" href="$_o_s_8h.html#acb6df8f47f418aad9c9a9e045d7d1e6d" title="OS_Init initialize operating system, disable interrupts until OS_Launch initialize OS controlled I/O:..." alt="" coords="5,208,71,235"/>
+<area shape="rect" id="node10" href="$_o_s_8h.html#a3a00d60b873633ca10b91cfa41d44e7d" title=" " alt="" coords="119,284,276,311"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="OS_InitSemaphore" name="OS_InitSemaphore">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,136,57"/>
+<area shape="rect" id="node2" href="$startup_8h.html#a2bd85031589c754845b826ef8a50fe15" title="Start Criticat Sections, Disable Global Interrupts." alt="" coords="184,5,275,32"/>
+<area shape="rect" id="node3" href="$startup_8h.html#a334154d527e554c179f59f15789a9034" title="End of critical section (ISR = prev ISR) @parameter sr previously saved PSR." alt="" coords="187,56,272,83"/>
+</map>
