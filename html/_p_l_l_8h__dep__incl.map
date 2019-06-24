@@ -1,11 +1,11 @@
-<map id="SikenderOS/HAL/PLL.h" name="SikenderOS/HAL/PLL.h">
-<area shape="rect" id="node1" title="Sets Clock Speed." alt="" coords="348,5,507,32"/>
-<area shape="rect" id="node2" href="$cpu_8h.html" title="Contains CPU Initialization and Register functions/definitions." alt="" coords="258,80,415,107"/>
-<area shape="rect" id="node9" href="$_p_l_l_8c.html" title=" " alt="" coords="440,80,599,107"/>
-<area shape="rect" id="node3" href="$startup_8h.html" title="Contains Enable/Disable Interrupts, Start/EndCritical from startup file Used to control global ISR fl..." alt="" coords="50,155,242,181"/>
-<area shape="rect" id="node6" href="$_o_s_8c.html" title="Contains functions to run OS." alt="" coords="197,229,362,256"/>
-<area shape="rect" id="node7" href="$cpu_8c.html" title="Contains CPU Initializations and Register definition (this is example bc project uses legacy register..." alt="" coords="317,155,474,181"/>
-<area shape="rect" id="node8" href="$main_8c.html" title="Example program using SikendeRTOS features." alt="" coords="499,155,657,181"/>
-<area shape="rect" id="node4" href="$_f_i_f_o_8h.html" title="Provides Functions to initialize FIFO, uses index implementation and macro." alt="" coords="15,229,173,256"/>
-<area shape="rect" id="node5" href="$_u_a_r_t0_8c.html" title=" " alt="" coords="5,304,183,331"/>
+<map id="SikendeRTOS/SikenderOS/HAL/PLL.h" name="SikendeRTOS/SikenderOS/HAL/PLL.h">
+<area shape="rect" id="node1" title="Sets Clock Speed." alt="" coords="372,5,551,47"/>
+<area shape="rect" id="node2" href="$cpu_8h.html" title="Contains CPU Initialization and Register functions/definitions." alt="" coords="271,95,449,136"/>
+<area shape="rect" id="node9" href="$_p_l_l_8c.html" title=" " alt="" coords="473,95,652,136"/>
+<area shape="rect" id="node3" href="$startup_8h.html" title="Contains Enable/Disable Interrupts, Start/EndCritical from startup file Used to control global ISR fl..." alt="" coords="81,184,260,225"/>
+<area shape="rect" id="node6" href="$_o_s_8c.html" title="Contains functions to run OS." alt="" coords="208,273,387,315"/>
+<area shape="rect" id="node7" href="$cpu_8c.html" title="Contains CPU Initializations and Register definition (this is example bc project uses legacy register..." alt="" coords="335,184,513,225"/>
+<area shape="rect" id="node8" href="$main_8c.html" title="Example program using SikendeRTOS features." alt="" coords="537,184,716,225"/>
+<area shape="rect" id="node4" href="$_f_i_f_o_8h.html" title="Provides Functions to initialize FIFO, uses index implementation and macro." alt="" coords="5,273,184,315"/>
+<area shape="rect" id="node5" href="$_u_a_r_t0_8c.html" title=" " alt="" coords="5,363,184,404"/>
 </map>

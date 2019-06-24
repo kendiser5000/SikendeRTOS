@@ -1,9 +1,9 @@
-<map id="SikenderOS/RTOS/OSConfig.h" name="SikenderOS/RTOS/OSConfig.h">
-<area shape="rect" id="node1" title="Configuration setup for OS." alt="" coords="270,5,471,32"/>
-<area shape="rect" id="node2" href="$_o_s_8h.html" title="Functions for OS." alt="" coords="288,80,453,107"/>
-<area shape="rect" id="node3" href="$_u_a_r_t0_8h.html" title=" " alt="" coords="219,155,397,181"/>
-<area shape="rect" id="node5" href="$_interpreter_8c.html" title="Runs on TM4C123 UART Command Line Interface." alt="" coords="5,229,195,256"/>
-<area shape="rect" id="node6" href="$main_8c.html" title="Example program using SikendeRTOS features." alt="" coords="421,229,579,256"/>
-<area shape="rect" id="node7" href="$_o_s_8c.html" title="Contains functions to run OS." alt="" coords="472,155,637,181"/>
-<area shape="rect" id="node4" href="$_u_a_r_t0_8c.html" title=" " alt="" coords="219,229,397,256"/>
+<map id="SikendeRTOS/SikenderOS/RTOS/OSConfig.h" name="SikendeRTOS/SikenderOS/RTOS/OSConfig.h">
+<area shape="rect" id="node1" title="Configuration setup for OS." alt="" coords="271,5,449,47"/>
+<area shape="rect" id="node2" href="$_o_s_8h.html" title="Functions for OS." alt="" coords="271,95,449,136"/>
+<area shape="rect" id="node3" href="$_u_a_r_t0_8h.html" title=" " alt="" coords="208,184,387,225"/>
+<area shape="rect" id="node5" href="$_interpreter_8c.html" title="Runs on TM4C123 UART Command Line Interface." alt="" coords="5,273,184,315"/>
+<area shape="rect" id="node6" href="$main_8c.html" title="Example program using SikendeRTOS features." alt="" coords="411,273,589,315"/>
+<area shape="rect" id="node7" href="$_o_s_8c.html" title="Contains functions to run OS." alt="" coords="461,184,640,225"/>
+<area shape="rect" id="node4" href="$_u_a_r_t0_8c.html" title=" " alt="" coords="208,273,387,315"/>
 </map>

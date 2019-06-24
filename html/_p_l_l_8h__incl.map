@@ -1,5 +1,5 @@
-<map id="SikenderOS/HAL/PLL.h" name="SikenderOS/HAL/PLL.h">
-<area shape="rect" id="node1" title="Sets Clock Speed." alt="" coords="5,5,164,32"/>
-<area shape="rect" id="node2" href="$cpu__vars_8h.html" title="Contains CPU/Compilter variables." alt="" coords="43,80,127,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="52,155,117,181"/>
+<map id="SikendeRTOS/SikenderOS/HAL/PLL.h" name="SikendeRTOS/SikenderOS/HAL/PLL.h">
+<area shape="rect" id="node1" title="Sets Clock Speed." alt="" coords="5,5,184,47"/>
+<area shape="rect" id="node2" href="$cpu__vars_8h.html" title="Contains CPU/Compilter variables." alt="" coords="53,95,137,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="62,169,127,196"/>
 </map>

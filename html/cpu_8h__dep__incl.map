@@ -1,9 +1,9 @@
-<map id="SikenderOS/HAL/cpu.h" name="SikenderOS/HAL/cpu.h">
-<area shape="rect" id="node1" title="Contains CPU Initialization and Register functions/definitions." alt="" coords="258,5,415,32"/>
-<area shape="rect" id="node2" href="$startup_8h.html" title="Contains Enable/Disable Interrupts, Start/EndCritical from startup file Used to control global ISR fl..." alt="" coords="50,80,242,107"/>
-<area shape="rect" id="node5" href="$_o_s_8c.html" title="Contains functions to run OS." alt="" coords="197,155,362,181"/>
-<area shape="rect" id="node6" href="$cpu_8c.html" title="Contains CPU Initializations and Register definition (this is example bc project uses legacy register..." alt="" coords="317,80,474,107"/>
-<area shape="rect" id="node7" href="$main_8c.html" title="Example program using SikendeRTOS features." alt="" coords="499,80,657,107"/>
-<area shape="rect" id="node3" href="$_f_i_f_o_8h.html" title="Provides Functions to initialize FIFO, uses index implementation and macro." alt="" coords="15,155,173,181"/>
-<area shape="rect" id="node4" href="$_u_a_r_t0_8c.html" title=" " alt="" coords="5,229,183,256"/>
+<map id="SikendeRTOS/SikenderOS/HAL/cpu.h" name="SikendeRTOS/SikenderOS/HAL/cpu.h">
+<area shape="rect" id="node1" title="Contains CPU Initialization and Register functions/definitions." alt="" coords="271,5,449,47"/>
+<area shape="rect" id="node2" href="$startup_8h.html" title="Contains Enable/Disable Interrupts, Start/EndCritical from startup file Used to control global ISR fl..." alt="" coords="81,95,260,136"/>
+<area shape="rect" id="node5" href="$_o_s_8c.html" title="Contains functions to run OS." alt="" coords="208,184,387,225"/>
+<area shape="rect" id="node6" href="$cpu_8c.html" title="Contains CPU Initializations and Register definition (this is example bc project uses legacy register..." alt="" coords="335,95,513,136"/>
+<area shape="rect" id="node7" href="$main_8c.html" title="Example program using SikendeRTOS features." alt="" coords="537,95,716,136"/>
+<area shape="rect" id="node3" href="$_f_i_f_o_8h.html" title="Provides Functions to initialize FIFO, uses index implementation and macro." alt="" coords="5,184,184,225"/>
+<area shape="rect" id="node4" href="$_u_a_r_t0_8c.html" title=" " alt="" coords="5,273,184,315"/>
 </map>

@@ -1,6 +1,6 @@
-<map id="SikenderOS/HAL/UART0.h" name="SikenderOS/HAL/UART0.h">
-<area shape="rect" id="node1" title=" " alt="" coords="213,5,391,32"/>
-<area shape="rect" id="node2" href="$_u_a_r_t0_8c.html" title=" " alt="" coords="5,80,183,107"/>
-<area shape="rect" id="node3" href="$_interpreter_8c.html" title="Runs on TM4C123 UART Command Line Interface." alt="" coords="207,80,397,107"/>
-<area shape="rect" id="node4" href="$main_8c.html" title="Example program using SikendeRTOS features." alt="" coords="421,80,580,107"/>
+<map id="SikendeRTOS/SikenderOS/HAL/UART0.h" name="SikendeRTOS/SikenderOS/HAL/UART0.h">
+<area shape="rect" id="node1" title=" " alt="" coords="208,5,387,47"/>
+<area shape="rect" id="node2" href="$_u_a_r_t0_8c.html" title=" " alt="" coords="5,95,184,136"/>
+<area shape="rect" id="node3" href="$_interpreter_8c.html" title="Runs on TM4C123 UART Command Line Interface." alt="" coords="208,95,387,136"/>
+<area shape="rect" id="node4" href="$main_8c.html" title="Example program using SikendeRTOS features." alt="" coords="411,95,589,136"/>
 </map>

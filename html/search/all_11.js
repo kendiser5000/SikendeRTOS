@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['sikendertos',['SikendeRTOS',['../index.html',1,'']]],
   ['scheduler_5fmode',['SCHEDULER_MODE',['../_o_s_config_8h.html#a30ed398770e9731249a89687b71bda7f',1,'OSConfig.h']]],
   ['sema4',['Sema4',['../struct_sema4.html',1,'']]],
   ['sema4blocked',['sema4Blocked',['../struct_tcb.html#ad8f010d42fd58e27c5639ea72d47df54',1,'Tcb']]],
