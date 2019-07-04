@@ -1,12 +1,12 @@
 <map id="newLine" name="newLine">
 <area shape="rect" id="node1" title=" " alt="" coords="5,56,75,83"/>
-<area shape="rect" id="node2" href="$_u_a_r_t0_8c.html#ae57176b8f54ba3f337f15238d7cf8ba6" title=" " alt="" coords="123,56,199,83"/>
+<area shape="rect" id="node2" href="$_u_a_r_t0_8h.html#ae57176b8f54ba3f337f15238d7cf8ba6" title=" " alt="" coords="123,56,199,83"/>
 <area shape="rect" id="node3" href="$_u_a_r_t0_8c.html#a4ef2f92682b12a347cf1f81cccda4da7" title=" " alt="" coords="247,56,357,83"/>
-<area shape="rect" id="node4" href="$_o_s_8c.html#aad29612829941c857ed685f40e193cd0" title=" " alt="" coords="405,56,480,83"/>
+<area shape="rect" id="node4" href="$_o_s_8h.html#aad29612829941c857ed685f40e193cd0" title="semaphore value decrement" alt="" coords="405,56,480,83"/>
 <area shape="rect" id="node5" href="$startup_8h.html#a2bd85031589c754845b826ef8a50fe15" title="Start Criticat Sections, Disable Global Interrupts." alt="" coords="528,5,619,32"/>
-<area shape="rect" id="node6" href="$_o_s_8c.html#aef10d0f111dd7005eb47910c2c539774" title=" " alt="" coords="533,56,613,83"/>
+<area shape="rect" id="node6" href="$_o_s_8c.html#aef10d0f111dd7005eb47910c2c539774" title="Add current TCB to blocked list then yield, ratatatat." alt="" coords="533,56,613,83"/>
 <area shape="rect" id="node10" href="$startup_8h.html#a334154d527e554c179f59f15789a9034" title="End of critical section (ISR = prev ISR) @parameter sr previously saved PSR." alt="" coords="531,107,616,133"/>
 <area shape="rect" id="node7" href="$_o_s_8c.html#aad5d03b551650383d80786160b0c5e37" title="UnLinkTCB Remove thread form Doubly LL of TCB, copy pasta." alt="" coords="709,5,796,32"/>
-<area shape="rect" id="node8" href="$_o_s_8c.html#adf29cacb24e7fe15bc46811f994eaa57" title=" " alt="" coords="667,56,839,83"/>
-<area shape="rect" id="node9" href="$_o_s_8c.html#a4e71587568a2a48931a35615cad1b5db" title=" " alt="" coords="703,107,802,133"/>
+<area shape="rect" id="node8" href="$_o_s_8c.html#adf29cacb24e7fe15bc46811f994eaa57" title="Add TCB to blocked Linked list of semaphore." alt="" coords="667,56,839,83"/>
+<area shape="rect" id="node9" href="$_o_s_8c.html#a4e71587568a2a48931a35615cad1b5db" title="This function suspends current thread by forcing context switch call." alt="" coords="703,107,802,133"/>
 </map>

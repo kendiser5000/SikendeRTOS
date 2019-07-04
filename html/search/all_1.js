@@ -2,8 +2,8 @@ var searchData=
 [
   ['blocktcb',['BlockTCB',['../_o_s_8c.html#aef10d0f111dd7005eb47910c2c539774',1,'OS.c']]],
   ['blockthreads',['blockThreads',['../struct_sema4.html#a28cc78519cab4384fe9283de3db4a06d',1,'Sema4']]],
-  ['blue_5fblink',['BLUE_BLINK',['../main_8c.html#a26bd32f1d9d1f034f1ae68cfc08f742a',1,'main.c']]],
-  ['blue_5fled',['BLUE_LED',['../main_8c.html#a41c7fcbe209a1c236fd1b8e35bd8b55a',1,'main.c']]],
+  ['blue_5fblink',['BLUE_BLINK',['../_h_a_l_2inc_2cpu_8h.html#a26bd32f1d9d1f034f1ae68cfc08f742a',1,'BLUE_BLINK():&#160;cpu.h'],['../_r_t_o_s_2inc_2cpu_8h.html#a26bd32f1d9d1f034f1ae68cfc08f742a',1,'BLUE_BLINK():&#160;cpu.h']]],
+  ['blue_5fled',['BLUE_LED',['../_h_a_l_2inc_2cpu_8h.html#a41c7fcbe209a1c236fd1b8e35bd8b55a',1,'BLUE_LED():&#160;cpu.h'],['../_r_t_o_s_2inc_2cpu_8h.html#a41c7fcbe209a1c236fd1b8e35bd8b55a',1,'BLUE_LED():&#160;cpu.h']]],
   ['bs',['BS',['../_u_a_r_t0_8h.html#a580a88f98668df1ac5e1683cae31c0b3',1,'UART0.h']]],
   ['bus10_5f000mhz',['Bus10_000MHz',['../_p_l_l_8h.html#ad72b00b8df54565e9a5e9df32a6720a4',1,'PLL.h']]],
   ['bus10_5f256mhz',['Bus10_256MHz',['../_p_l_l_8h.html#a1c6e53071fd1645d26cadd040510f2fe',1,'PLL.h']]],
@@ -137,5 +137,5 @@ var searchData=
   ['bus9_5f302mhz',['Bus9_302MHz',['../_p_l_l_8h.html#a164eb387033c944bc1d0e12a7abeb0cf',1,'PLL.h']]],
   ['bus9_5f524mhz',['Bus9_524MHz',['../_p_l_l_8h.html#a7c45e3e467675adb3b80135d0e82e940',1,'PLL.h']]],
   ['bus9_5f756mhz',['Bus9_756MHz',['../_p_l_l_8h.html#a838130c20fa5bfdc65c350bc0b067668',1,'PLL.h']]],
-  ['bus_5fclk',['BUS_CLK',['../cpu_8h.html#a9af5ea037cd73739ffb3f55f7dc54bfb',1,'cpu.h']]]
+  ['bus_5fclk',['BUS_CLK',['../_h_a_l_2inc_2cpu_8h.html#a9af5ea037cd73739ffb3f55f7dc54bfb',1,'BUS_CLK():&#160;cpu.h'],['../_r_t_o_s_2inc_2cpu_8h.html#a9af5ea037cd73739ffb3f55f7dc54bfb',1,'BUS_CLK():&#160;cpu.h']]]
 ];

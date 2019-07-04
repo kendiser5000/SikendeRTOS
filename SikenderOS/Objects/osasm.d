@@ -1,1 +1,1 @@
-.\objects\osasm.o: RTOS\OSAsm.s
+.\objects\osasm.o: RTOS\src\OSAsm.s

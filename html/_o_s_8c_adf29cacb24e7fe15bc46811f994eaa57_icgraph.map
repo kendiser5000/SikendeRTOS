@@ -1,6 +1,6 @@
 <map id="AddBlockedToSemaphore" name="AddBlockedToSemaphore">
-<area shape="rect" id="node1" title=" " alt="" coords="264,31,436,57"/>
-<area shape="rect" id="node2" href="$_o_s_8c.html#aef10d0f111dd7005eb47910c2c539774" title=" " alt="" coords="136,31,216,57"/>
-<area shape="rect" id="node3" href="$_o_s_8h.html#aad29612829941c857ed685f40e193cd0" title=" " alt="" coords="9,5,84,32"/>
-<area shape="rect" id="node4" href="$_o_s_8h.html#a3f127f7a40ffd3e43b7b0f4c8b7f30ff" title="Wait on semaphore, binary @parameter semaPt pointer to semaphore." alt="" coords="5,56,88,83"/>
+<area shape="rect" id="node1" title="Add TCB to blocked Linked list of semaphore." alt="" coords="264,31,436,57"/>
+<area shape="rect" id="node2" href="$_o_s_8c.html#aef10d0f111dd7005eb47910c2c539774" title="Add current TCB to blocked list then yield, ratatatat." alt="" coords="136,31,216,57"/>
+<area shape="rect" id="node3" href="$_o_s_8c.html#aad29612829941c857ed685f40e193cd0" title="semaphore value decrement" alt="" coords="9,5,84,32"/>
+<area shape="rect" id="node4" href="$_o_s_8c.html#a3f127f7a40ffd3e43b7b0f4c8b7f30ff" title="This function implements binary wait." alt="" coords="5,56,88,83"/>
 </map>

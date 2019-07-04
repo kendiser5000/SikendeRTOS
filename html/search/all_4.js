@@ -55,7 +55,8 @@ var searchData=
   ['eeprom_5fpp_5fsize_5fm',['EEPROM_PP_SIZE_M',['../tm4c123gh6pm_8h.html#ad606a34b1bed4e1397fbfd089de8cb06',1,'tm4c123gh6pm.h']]],
   ['eeprom_5fpp_5fsize_5fs',['EEPROM_PP_SIZE_S',['../tm4c123gh6pm_8h.html#ac94660d349f8bf0646cf7a564be51c9a',1,'tm4c123gh6pm.h']]],
   ['empty',['Empty',['../struct_mail_box.html#a3ff4da4f33c82f6c15f3233edb277661',1,'MailBox']]],
-  ['enableinterrupts',['EnableInterrupts',['../startup_8h.html#ab712356331a62b04aebcb373865e68c4',1,'EnableInterrupts(void):&#160;startup.h'],['../_u_a_r_t0_8c.html#ab712356331a62b04aebcb373865e68c4',1,'EnableInterrupts(void):&#160;UART0.c']]],
-  ['endcritical',['EndCritical',['../startup_8h.html#a334154d527e554c179f59f15789a9034',1,'startup.h']]],
-  ['esc',['ESC',['../_u_a_r_t0_8h.html#a4af1b6159e447ba72652bb7fcdfa726e',1,'UART0.h']]]
+  ['enableinterrupts',['EnableInterrupts',['../startup_8h.html#ab712356331a62b04aebcb373865e68c4',1,'EnableInterrupts(void):&#160;startup.h'],['../_timer_8c.html#ab712356331a62b04aebcb373865e68c4',1,'EnableInterrupts(void):&#160;Timer.c'],['../_u_a_r_t0_8c.html#ab712356331a62b04aebcb373865e68c4',1,'EnableInterrupts(void):&#160;UART0.c']]],
+  ['endcritical',['EndCritical',['../startup_8h.html#a334154d527e554c179f59f15789a9034',1,'EndCritical(INT32U sr):&#160;startup.h'],['../_timer_8c.html#ab951a617be3009367cd2abdb523990f6',1,'EndCritical(uint32_t sr):&#160;Timer.c']]],
+  ['esc',['ESC',['../_u_a_r_t0_8h.html#a4af1b6159e447ba72652bb7fcdfa726e',1,'UART0.h']]],
+  ['executecommand',['executeCommand',['../_interpreter_8c.html#a9114c4f99de7fb28b6e220b582ff86af',1,'Interpreter.c']]]
 ];

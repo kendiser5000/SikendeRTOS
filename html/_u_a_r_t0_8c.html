@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SikendeRTOS: SikendeRTOS/SikenderOS/HAL/UART0.c File Reference</title>
+<title>SikendeRTOS: SikendeRTOS/SikenderOS/HAL/src/UART0.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -100,19 +100,19 @@ $(document).ready(function(){initNavTree('_u_a_r_t0_8c.html','');});
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for UART0.c:</div>
 <div class="dyncontent">
-<div class="center"><img src="_u_a_r_t0_8c__incl.png" border="0" usemap="#_sikende_r_t_o_s_2_sikender_o_s_2_h_a_l_2_u_a_r_t0_8c" alt=""/></div>
-<map name="_sikende_r_t_o_s_2_sikender_o_s_2_h_a_l_2_u_a_r_t0_8c" id="_sikende_r_t_o_s_2_sikender_o_s_2_h_a_l_2_u_a_r_t0_8c">
-<area shape="rect"  title=" " alt="" coords="231,5,409,47"/>
-<area shape="rect"  title=" " alt="" coords="161,468,226,495"/>
-<area shape="rect"  href="tm4c123gh6pm_8h.html" title="Register location header of TM4C123GH6PM." alt="" coords="311,319,433,345"/>
-<area shape="rect"  href="_u_a_r_t0_8h.html" title=" " alt="" coords="76,319,151,345"/>
-<area shape="rect"  href="_f_i_f_o_8h.html" title="Provides Functions to initialize FIFO, uses index implementation and macro." alt="" coords="253,95,315,121"/>
-<area shape="rect"  href="_o_s_8h.html" title="Functions for OS." alt="" coords="23,393,75,420"/>
-<area shape="rect"  href="_o_s_config_8h.html" title="Configuration setup for OS." alt="" coords="5,468,93,495"/>
-<area shape="rect"  href="startup_8h.html" title="Contains Enable/Disable Interrupts, Start/EndCritical from startup file Used to control global ISR fl..." alt="" coords="245,169,318,196"/>
-<area shape="rect"  href="cpu_8h.html" title="Contains CPU Initialization and Register functions/definitions." alt="" coords="249,244,303,271"/>
-<area shape="rect"  href="_p_l_l_8h.html" title="Sets Clock Speed." alt="" coords="177,319,233,345"/>
-<area shape="rect"  href="cpu__vars_8h.html" title="Contains CPU/Compilter variables." alt="" coords="151,393,235,420"/>
+<div class="center"><img src="_u_a_r_t0_8c__incl.png" border="0" usemap="#_sikende_r_t_o_s_2_sikender_o_s_2_h_a_l_2src_2_u_a_r_t0_8c" alt=""/></div>
+<map name="_sikende_r_t_o_s_2_sikender_o_s_2_h_a_l_2src_2_u_a_r_t0_8c" id="_sikende_r_t_o_s_2_sikender_o_s_2_h_a_l_2src_2_u_a_r_t0_8c">
+<area shape="rect"  title=" " alt="" coords="76,5,255,47"/>
+<area shape="rect"  title=" " alt="" coords="43,393,109,420"/>
+<area shape="rect"  href="tm4c123gh6pm_8h.html" title="Register location header of TM4C123GH6PM." alt="" coords="43,95,165,121"/>
+<area shape="rect"  href="_u_a_r_t0_8h.html" title=" " alt="" coords="189,95,264,121"/>
+<area shape="rect"  href="_f_i_f_o_8h.html" title="Provides Functions to initialize FIFO, uses index implementation and macro." alt="" coords="289,95,351,121"/>
+<area shape="rect"  href="_o_s_8h.html" title="Functions for OS." alt="" coords="201,169,253,196"/>
+<area shape="rect"  href="_o_s_config_8h.html" title="Configuration setup for OS." alt="" coords="113,244,201,271"/>
+<area shape="rect"  href="_r_t_o_s_2inc_2cpu__vars_8h.html" title=" " alt="" coords="115,319,199,345"/>
+<area shape="rect"  href="startup_8h.html" title="Contains Enable/Disable Interrupts, Start/EndCritical from startup file Used to control global ISR fl..." alt="" coords="279,169,353,196"/>
+<area shape="rect"  title=" " alt="" coords="377,169,461,196"/>
+<area shape="rect"  title=" " alt="" coords="289,244,343,271"/>
 </map>
 </div>
 </div>
@@ -583,7 +583,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="_u_a_r_t0_8c_ad8cc8b6d19cc137eb483b624de82182c_cgraph.png" border="0" usemap="#_u_a_r_t0_8c_ad8cc8b6d19cc137eb483b624de82182c_cgraph" alt=""/></div>
 <map name="_u_a_r_t0_8c_ad8cc8b6d19cc137eb483b624de82182c_cgraph" id="_u_a_r_t0_8c_ad8cc8b6d19cc137eb483b624de82182c_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,31,103,57"/>
-<area shape="rect"  href="_o_s_8c.html#af580c6222330cc3d214763ddac7800b9" title=" " alt="" coords="151,31,281,57"/>
+<area shape="rect"  href="_o_s_8h.html#ae3a59ef7ce0ba07d23ab8c421c5b7f15" title="Initialize semaphore to given value." alt="" coords="151,31,281,57"/>
 <area shape="rect"  href="startup_8h.html#a2bd85031589c754845b826ef8a50fe15" title="Start Criticat Sections, Disable Global Interrupts." alt="" coords="329,5,420,32"/>
 <area shape="rect"  href="startup_8h.html#a334154d527e554c179f59f15789a9034" title="End of critical section (ISR = prev ISR) @parameter sr previously saved PSR." alt="" coords="332,56,417,83"/>
 </map>
@@ -651,13 +651,13 @@ Here is the call graph for this function:</div>
 <map name="_u_a_r_t0_8c_ae57176b8f54ba3f337f15238d7cf8ba6_cgraph" id="_u_a_r_t0_8c_ae57176b8f54ba3f337f15238d7cf8ba6_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,56,81,83"/>
 <area shape="rect"  href="_u_a_r_t0_8c.html#a4ef2f92682b12a347cf1f81cccda4da7" title=" " alt="" coords="129,56,240,83"/>
-<area shape="rect"  href="_o_s_8c.html#aad29612829941c857ed685f40e193cd0" title=" " alt="" coords="288,56,363,83"/>
+<area shape="rect"  href="_o_s_8h.html#aad29612829941c857ed685f40e193cd0" title="semaphore value decrement" alt="" coords="288,56,363,83"/>
 <area shape="rect"  href="startup_8h.html#a2bd85031589c754845b826ef8a50fe15" title="Start Criticat Sections, Disable Global Interrupts." alt="" coords="411,5,501,32"/>
-<area shape="rect"  href="_o_s_8c.html#aef10d0f111dd7005eb47910c2c539774" title=" " alt="" coords="416,56,496,83"/>
+<area shape="rect"  href="_o_s_8c.html#aef10d0f111dd7005eb47910c2c539774" title="Add current TCB to blocked list then yield, ratatatat." alt="" coords="416,56,496,83"/>
 <area shape="rect"  href="startup_8h.html#a334154d527e554c179f59f15789a9034" title="End of critical section (ISR = prev ISR) @parameter sr previously saved PSR." alt="" coords="413,107,499,133"/>
 <area shape="rect"  href="_o_s_8c.html#aad5d03b551650383d80786160b0c5e37" title="UnLinkTCB Remove thread form Doubly LL of TCB, copy pasta." alt="" coords="592,5,679,32"/>
-<area shape="rect"  href="_o_s_8c.html#adf29cacb24e7fe15bc46811f994eaa57" title=" " alt="" coords="549,56,721,83"/>
-<area shape="rect"  href="_o_s_8c.html#a4e71587568a2a48931a35615cad1b5db" title=" " alt="" coords="586,107,685,133"/>
+<area shape="rect"  href="_o_s_8c.html#adf29cacb24e7fe15bc46811f994eaa57" title="Add TCB to blocked Linked list of semaphore." alt="" coords="549,56,721,83"/>
+<area shape="rect"  href="_o_s_8c.html#a4e71587568a2a48931a35615cad1b5db" title="This function suspends current thread by forcing context switch call." alt="" coords="586,107,685,133"/>
 </map>
 </div>
 
@@ -738,13 +738,13 @@ Here is the call graph for this function:</div>
 <area shape="rect"  title=" " alt="" coords="5,31,112,57"/>
 <area shape="rect"  href="_u_a_r_t0_8c.html#a00e894bb188320a2f4dcd5a78b80da52" title=" " alt="" coords="165,5,265,32"/>
 <area shape="rect"  href="_u_a_r_t0_8c.html#a4ef2f92682b12a347cf1f81cccda4da7" title=" " alt="" coords="160,56,271,83"/>
-<area shape="rect"  href="_o_s_8c.html#aad29612829941c857ed685f40e193cd0" title=" " alt="" coords="319,56,393,83"/>
+<area shape="rect"  href="_o_s_8h.html#aad29612829941c857ed685f40e193cd0" title="semaphore value decrement" alt="" coords="319,56,393,83"/>
 <area shape="rect"  href="startup_8h.html#a2bd85031589c754845b826ef8a50fe15" title="Start Criticat Sections, Disable Global Interrupts." alt="" coords="441,5,532,32"/>
-<area shape="rect"  href="_o_s_8c.html#aef10d0f111dd7005eb47910c2c539774" title=" " alt="" coords="447,56,527,83"/>
+<area shape="rect"  href="_o_s_8c.html#aef10d0f111dd7005eb47910c2c539774" title="Add current TCB to blocked list then yield, ratatatat." alt="" coords="447,56,527,83"/>
 <area shape="rect"  href="startup_8h.html#a334154d527e554c179f59f15789a9034" title="End of critical section (ISR = prev ISR) @parameter sr previously saved PSR." alt="" coords="444,107,529,133"/>
 <area shape="rect"  href="_o_s_8c.html#aad5d03b551650383d80786160b0c5e37" title="UnLinkTCB Remove thread form Doubly LL of TCB, copy pasta." alt="" coords="623,5,709,32"/>
-<area shape="rect"  href="_o_s_8c.html#adf29cacb24e7fe15bc46811f994eaa57" title=" " alt="" coords="580,56,752,83"/>
-<area shape="rect"  href="_o_s_8c.html#a4e71587568a2a48931a35615cad1b5db" title=" " alt="" coords="617,107,715,133"/>
+<area shape="rect"  href="_o_s_8c.html#adf29cacb24e7fe15bc46811f994eaa57" title="Add TCB to blocked Linked list of semaphore." alt="" coords="580,56,752,83"/>
+<area shape="rect"  href="_o_s_8c.html#a4e71587568a2a48931a35615cad1b5db" title="This function suspends current thread by forcing context switch call." alt="" coords="617,107,715,133"/>
 </map>
 </div>
 
@@ -775,13 +775,13 @@ Here is the call graph for this function:</div>
 <area shape="rect"  title=" " alt="" coords="5,31,111,57"/>
 <area shape="rect"  href="_u_a_r_t0_8c.html#a00e894bb188320a2f4dcd5a78b80da52" title=" " alt="" coords="164,5,264,32"/>
 <area shape="rect"  href="_u_a_r_t0_8c.html#a4ef2f92682b12a347cf1f81cccda4da7" title=" " alt="" coords="159,56,269,83"/>
-<area shape="rect"  href="_o_s_8c.html#aad29612829941c857ed685f40e193cd0" title=" " alt="" coords="317,56,392,83"/>
+<area shape="rect"  href="_o_s_8h.html#aad29612829941c857ed685f40e193cd0" title="semaphore value decrement" alt="" coords="317,56,392,83"/>
 <area shape="rect"  href="startup_8h.html#a2bd85031589c754845b826ef8a50fe15" title="Start Criticat Sections, Disable Global Interrupts." alt="" coords="440,5,531,32"/>
-<area shape="rect"  href="_o_s_8c.html#aef10d0f111dd7005eb47910c2c539774" title=" " alt="" coords="445,56,525,83"/>
+<area shape="rect"  href="_o_s_8c.html#aef10d0f111dd7005eb47910c2c539774" title="Add current TCB to blocked list then yield, ratatatat." alt="" coords="445,56,525,83"/>
 <area shape="rect"  href="startup_8h.html#a334154d527e554c179f59f15789a9034" title="End of critical section (ISR = prev ISR) @parameter sr previously saved PSR." alt="" coords="443,107,528,133"/>
 <area shape="rect"  href="_o_s_8c.html#aad5d03b551650383d80786160b0c5e37" title="UnLinkTCB Remove thread form Doubly LL of TCB, copy pasta." alt="" coords="621,5,708,32"/>
-<area shape="rect"  href="_o_s_8c.html#adf29cacb24e7fe15bc46811f994eaa57" title=" " alt="" coords="579,56,751,83"/>
-<area shape="rect"  href="_o_s_8c.html#a4e71587568a2a48931a35615cad1b5db" title=" " alt="" coords="615,107,714,133"/>
+<area shape="rect"  href="_o_s_8c.html#adf29cacb24e7fe15bc46811f994eaa57" title="Add TCB to blocked Linked list of semaphore." alt="" coords="579,56,751,83"/>
+<area shape="rect"  href="_o_s_8c.html#a4e71587568a2a48931a35615cad1b5db" title="This function suspends current thread by forcing context switch call." alt="" coords="615,107,714,133"/>
 </map>
 </div>
 
@@ -812,13 +812,13 @@ Here is the call graph for this function:</div>
 <area shape="rect"  title=" " alt="" coords="5,31,111,57"/>
 <area shape="rect"  href="_u_a_r_t0_8c.html#a00e894bb188320a2f4dcd5a78b80da52" title=" " alt="" coords="164,5,264,32"/>
 <area shape="rect"  href="_u_a_r_t0_8c.html#a4ef2f92682b12a347cf1f81cccda4da7" title=" " alt="" coords="159,56,269,83"/>
-<area shape="rect"  href="_o_s_8c.html#aad29612829941c857ed685f40e193cd0" title=" " alt="" coords="317,56,392,83"/>
+<area shape="rect"  href="_o_s_8h.html#aad29612829941c857ed685f40e193cd0" title="semaphore value decrement" alt="" coords="317,56,392,83"/>
 <area shape="rect"  href="startup_8h.html#a2bd85031589c754845b826ef8a50fe15" title="Start Criticat Sections, Disable Global Interrupts." alt="" coords="440,5,531,32"/>
-<area shape="rect"  href="_o_s_8c.html#aef10d0f111dd7005eb47910c2c539774" title=" " alt="" coords="445,56,525,83"/>
+<area shape="rect"  href="_o_s_8c.html#aef10d0f111dd7005eb47910c2c539774" title="Add current TCB to blocked list then yield, ratatatat." alt="" coords="445,56,525,83"/>
 <area shape="rect"  href="startup_8h.html#a334154d527e554c179f59f15789a9034" title="End of critical section (ISR = prev ISR) @parameter sr previously saved PSR." alt="" coords="443,107,528,133"/>
 <area shape="rect"  href="_o_s_8c.html#aad5d03b551650383d80786160b0c5e37" title="UnLinkTCB Remove thread form Doubly LL of TCB, copy pasta." alt="" coords="621,5,708,32"/>
-<area shape="rect"  href="_o_s_8c.html#adf29cacb24e7fe15bc46811f994eaa57" title=" " alt="" coords="579,56,751,83"/>
-<area shape="rect"  href="_o_s_8c.html#a4e71587568a2a48931a35615cad1b5db" title=" " alt="" coords="615,107,714,133"/>
+<area shape="rect"  href="_o_s_8c.html#adf29cacb24e7fe15bc46811f994eaa57" title="Add TCB to blocked Linked list of semaphore." alt="" coords="579,56,751,83"/>
+<area shape="rect"  href="_o_s_8c.html#a4e71587568a2a48931a35615cad1b5db" title="This function suspends current thread by forcing context switch call." alt="" coords="615,107,714,133"/>
 </map>
 </div>
 
@@ -847,13 +847,13 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="_u_a_r_t0_8c_a4ef2f92682b12a347cf1f81cccda4da7_cgraph.png" border="0" usemap="#_u_a_r_t0_8c_a4ef2f92682b12a347cf1f81cccda4da7_cgraph" alt=""/></div>
 <map name="_u_a_r_t0_8c_a4ef2f92682b12a347cf1f81cccda4da7_cgraph" id="_u_a_r_t0_8c_a4ef2f92682b12a347cf1f81cccda4da7_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,56,116,83"/>
-<area shape="rect"  href="_o_s_8c.html#aad29612829941c857ed685f40e193cd0" title=" " alt="" coords="164,56,239,83"/>
+<area shape="rect"  href="_o_s_8h.html#aad29612829941c857ed685f40e193cd0" title="semaphore value decrement" alt="" coords="164,56,239,83"/>
 <area shape="rect"  href="startup_8h.html#a2bd85031589c754845b826ef8a50fe15" title="Start Criticat Sections, Disable Global Interrupts." alt="" coords="287,5,377,32"/>
-<area shape="rect"  href="_o_s_8c.html#aef10d0f111dd7005eb47910c2c539774" title=" " alt="" coords="292,56,372,83"/>
+<area shape="rect"  href="_o_s_8c.html#aef10d0f111dd7005eb47910c2c539774" title="Add current TCB to blocked list then yield, ratatatat." alt="" coords="292,56,372,83"/>
 <area shape="rect"  href="startup_8h.html#a334154d527e554c179f59f15789a9034" title="End of critical section (ISR = prev ISR) @parameter sr previously saved PSR." alt="" coords="289,107,375,133"/>
 <area shape="rect"  href="_o_s_8c.html#aad5d03b551650383d80786160b0c5e37" title="UnLinkTCB Remove thread form Doubly LL of TCB, copy pasta." alt="" coords="468,5,555,32"/>
-<area shape="rect"  href="_o_s_8c.html#adf29cacb24e7fe15bc46811f994eaa57" title=" " alt="" coords="425,56,597,83"/>
-<area shape="rect"  href="_o_s_8c.html#a4e71587568a2a48931a35615cad1b5db" title=" " alt="" coords="462,107,561,133"/>
+<area shape="rect"  href="_o_s_8c.html#adf29cacb24e7fe15bc46811f994eaa57" title="Add TCB to blocked Linked list of semaphore." alt="" coords="425,56,597,83"/>
+<area shape="rect"  href="_o_s_8c.html#a4e71587568a2a48931a35615cad1b5db" title="This function suspends current thread by forcing context switch call." alt="" coords="462,107,561,133"/>
 </map>
 </div>
 
@@ -883,13 +883,13 @@ Here is the call graph for this function:</div>
 <map name="_u_a_r_t0_8c_a2cbbed822dc8e6d801e6c9f21a2cd418_cgraph" id="_u_a_r_t0_8c_a2cbbed822dc8e6d801e6c9f21a2cd418_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,56,124,83"/>
 <area shape="rect"  href="_u_a_r_t0_8c.html#a4ef2f92682b12a347cf1f81cccda4da7" title=" " alt="" coords="172,56,283,83"/>
-<area shape="rect"  href="_o_s_8c.html#aad29612829941c857ed685f40e193cd0" title=" " alt="" coords="331,56,405,83"/>
+<area shape="rect"  href="_o_s_8h.html#aad29612829941c857ed685f40e193cd0" title="semaphore value decrement" alt="" coords="331,56,405,83"/>
 <area shape="rect"  href="startup_8h.html#a2bd85031589c754845b826ef8a50fe15" title="Start Criticat Sections, Disable Global Interrupts." alt="" coords="453,5,544,32"/>
-<area shape="rect"  href="_o_s_8c.html#aef10d0f111dd7005eb47910c2c539774" title=" " alt="" coords="459,56,539,83"/>
+<area shape="rect"  href="_o_s_8c.html#aef10d0f111dd7005eb47910c2c539774" title="Add current TCB to blocked list then yield, ratatatat." alt="" coords="459,56,539,83"/>
 <area shape="rect"  href="startup_8h.html#a334154d527e554c179f59f15789a9034" title="End of critical section (ISR = prev ISR) @parameter sr previously saved PSR." alt="" coords="456,107,541,133"/>
 <area shape="rect"  href="_o_s_8c.html#aad5d03b551650383d80786160b0c5e37" title="UnLinkTCB Remove thread form Doubly LL of TCB, copy pasta." alt="" coords="635,5,721,32"/>
-<area shape="rect"  href="_o_s_8c.html#adf29cacb24e7fe15bc46811f994eaa57" title=" " alt="" coords="592,56,764,83"/>
-<area shape="rect"  href="_o_s_8c.html#a4e71587568a2a48931a35615cad1b5db" title=" " alt="" coords="629,107,727,133"/>
+<area shape="rect"  href="_o_s_8c.html#adf29cacb24e7fe15bc46811f994eaa57" title="Add TCB to blocked Linked list of semaphore." alt="" coords="592,56,764,83"/>
+<area shape="rect"  href="_o_s_8c.html#a4e71587568a2a48931a35615cad1b5db" title="This function suspends current thread by forcing context switch call." alt="" coords="629,107,727,133"/>
 </map>
 </div>
 
@@ -919,13 +919,13 @@ Here is the call graph for this function:</div>
 <map name="_u_a_r_t0_8c_a9a53c5fe8486e0282990b11a218c2625_cgraph" id="_u_a_r_t0_8c_a9a53c5fe8486e0282990b11a218c2625_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,56,121,83"/>
 <area shape="rect"  href="_u_a_r_t0_8c.html#a4ef2f92682b12a347cf1f81cccda4da7" title=" " alt="" coords="169,56,280,83"/>
-<area shape="rect"  href="_o_s_8c.html#aad29612829941c857ed685f40e193cd0" title=" " alt="" coords="328,56,403,83"/>
+<area shape="rect"  href="_o_s_8h.html#aad29612829941c857ed685f40e193cd0" title="semaphore value decrement" alt="" coords="328,56,403,83"/>
 <area shape="rect"  href="startup_8h.html#a2bd85031589c754845b826ef8a50fe15" title="Start Criticat Sections, Disable Global Interrupts." alt="" coords="451,5,541,32"/>
-<area shape="rect"  href="_o_s_8c.html#aef10d0f111dd7005eb47910c2c539774" title=" " alt="" coords="456,56,536,83"/>
+<area shape="rect"  href="_o_s_8c.html#aef10d0f111dd7005eb47910c2c539774" title="Add current TCB to blocked list then yield, ratatatat." alt="" coords="456,56,536,83"/>
 <area shape="rect"  href="startup_8h.html#a334154d527e554c179f59f15789a9034" title="End of critical section (ISR = prev ISR) @parameter sr previously saved PSR." alt="" coords="453,107,539,133"/>
 <area shape="rect"  href="_o_s_8c.html#aad5d03b551650383d80786160b0c5e37" title="UnLinkTCB Remove thread form Doubly LL of TCB, copy pasta." alt="" coords="632,5,719,32"/>
-<area shape="rect"  href="_o_s_8c.html#adf29cacb24e7fe15bc46811f994eaa57" title=" " alt="" coords="589,56,761,83"/>
-<area shape="rect"  href="_o_s_8c.html#a4e71587568a2a48931a35615cad1b5db" title=" " alt="" coords="626,107,725,133"/>
+<area shape="rect"  href="_o_s_8c.html#adf29cacb24e7fe15bc46811f994eaa57" title="Add TCB to blocked Linked list of semaphore." alt="" coords="589,56,761,83"/>
+<area shape="rect"  href="_o_s_8c.html#a4e71587568a2a48931a35615cad1b5db" title="This function suspends current thread by forcing context switch call." alt="" coords="626,107,725,133"/>
 </map>
 </div>
 
@@ -955,13 +955,13 @@ Here is the call graph for this function:</div>
 <map name="_u_a_r_t0_8c_a21661aabfda94ec88e9514856f062a41_cgraph" id="_u_a_r_t0_8c_a21661aabfda94ec88e9514856f062a41_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,56,121,83"/>
 <area shape="rect"  href="_u_a_r_t0_8c.html#a4ef2f92682b12a347cf1f81cccda4da7" title=" " alt="" coords="169,56,280,83"/>
-<area shape="rect"  href="_o_s_8c.html#aad29612829941c857ed685f40e193cd0" title=" " alt="" coords="328,56,403,83"/>
+<area shape="rect"  href="_o_s_8h.html#aad29612829941c857ed685f40e193cd0" title="semaphore value decrement" alt="" coords="328,56,403,83"/>
 <area shape="rect"  href="startup_8h.html#a2bd85031589c754845b826ef8a50fe15" title="Start Criticat Sections, Disable Global Interrupts." alt="" coords="451,5,541,32"/>
-<area shape="rect"  href="_o_s_8c.html#aef10d0f111dd7005eb47910c2c539774" title=" " alt="" coords="456,56,536,83"/>
+<area shape="rect"  href="_o_s_8c.html#aef10d0f111dd7005eb47910c2c539774" title="Add current TCB to blocked list then yield, ratatatat." alt="" coords="456,56,536,83"/>
 <area shape="rect"  href="startup_8h.html#a334154d527e554c179f59f15789a9034" title="End of critical section (ISR = prev ISR) @parameter sr previously saved PSR." alt="" coords="453,107,539,133"/>
 <area shape="rect"  href="_o_s_8c.html#aad5d03b551650383d80786160b0c5e37" title="UnLinkTCB Remove thread form Doubly LL of TCB, copy pasta." alt="" coords="632,5,719,32"/>
-<area shape="rect"  href="_o_s_8c.html#adf29cacb24e7fe15bc46811f994eaa57" title=" " alt="" coords="589,56,761,83"/>
-<area shape="rect"  href="_o_s_8c.html#a4e71587568a2a48931a35615cad1b5db" title=" " alt="" coords="626,107,725,133"/>
+<area shape="rect"  href="_o_s_8c.html#adf29cacb24e7fe15bc46811f994eaa57" title="Add TCB to blocked Linked list of semaphore." alt="" coords="589,56,761,83"/>
+<area shape="rect"  href="_o_s_8c.html#a4e71587568a2a48931a35615cad1b5db" title="This function suspends current thread by forcing context switch call." alt="" coords="626,107,725,133"/>
 </map>
 </div>
 
@@ -990,7 +990,7 @@ Here is the call graph for this function:</div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_b8f6abffc78acec997478d109acf9148.html">SikendeRTOS</a></li><li class="navelem"><a class="el" href="dir_a4458d604b8c2e629a88b058174e2b3f.html">SikenderOS</a></li><li class="navelem"><a class="el" href="dir_213d4a3950a82888692d05f6250aeb40.html">HAL</a></li><li class="navelem"><a class="el" href="_u_a_r_t0_8c.html">UART0.c</a></li>
+    <li class="navelem"><a class="el" href="dir_b8f6abffc78acec997478d109acf9148.html">SikendeRTOS</a></li><li class="navelem"><a class="el" href="dir_a4458d604b8c2e629a88b058174e2b3f.html">SikenderOS</a></li><li class="navelem"><a class="el" href="dir_213d4a3950a82888692d05f6250aeb40.html">HAL</a></li><li class="navelem"><a class="el" href="dir_09cf9b32ae8c27fde1dee41336f46861.html">src</a></li><li class="navelem"><a class="el" href="_u_a_r_t0_8c.html">UART0.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

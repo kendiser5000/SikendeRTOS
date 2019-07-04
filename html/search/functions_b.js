@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main',['main',['../main_8c.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main.c']]]
+  ['newline',['newLine',['../_interpreter_8c.html#ac43fd57408ef9782a78ad90b3d466ed6',1,'Interpreter.c']]]
 ];

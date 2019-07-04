@@ -1,6 +1,7 @@
-<map id="SikendeRTOS/SikenderOS/HAL/UART0.h" name="SikendeRTOS/SikenderOS/HAL/UART0.h">
+<map id="SikendeRTOS/SikenderOS/HAL/inc/UART0.h" name="SikendeRTOS/SikenderOS/HAL/inc/UART0.h">
 <area shape="rect" id="node1" title=" " alt="" coords="5,5,184,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="30,169,95,196"/>
-<area shape="rect" id="node3" href="$_o_s_8h.html" title="Functions for OS." alt="" coords="101,95,153,121"/>
-<area shape="rect" id="node4" href="$_o_s_config_8h.html" title="Configuration setup for OS." alt="" coords="120,169,208,196"/>
+<area shape="rect" id="node2" title=" " alt="" coords="62,319,127,345"/>
+<area shape="rect" id="node3" href="$_o_s_8h.html" title="Functions for OS." alt="" coords="110,95,162,121"/>
+<area shape="rect" id="node4" href="$_o_s_config_8h.html" title="Configuration setup for OS." alt="" coords="92,169,180,196"/>
+<area shape="rect" id="node5" href="$_r_t_o_s_2inc_2cpu__vars_8h.html" title=" " alt="" coords="94,244,178,271"/>
 </map>

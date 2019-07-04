@@ -1,8 +1,4 @@
-<map id="SikendeRTOS/SikenderOS/HAL/cpu.c" name="SikendeRTOS/SikenderOS/HAL/cpu.c">
-<area shape="rect" id="node1" title="Contains CPU Initializations and Register definition (this is example bc project uses legacy register..." alt="" coords="76,5,255,47"/>
-<area shape="rect" id="node2" href="$cpu_8h.html" title="Contains CPU Initialization and Register functions/definitions." alt="" coords="138,95,193,121"/>
-<area shape="rect" id="node3" href="$tm4c123gh6pm_8h.html" title="Register location header of TM4C123GH6PM." alt="" coords="5,169,128,196"/>
-<area shape="rect" id="node4" title=" " alt="" coords="173,319,238,345"/>
-<area shape="rect" id="node5" href="$_p_l_l_8h.html" title="Sets Clock Speed." alt="" coords="211,169,267,196"/>
-<area shape="rect" id="node6" href="$cpu__vars_8h.html" title="Contains CPU/Compilter variables." alt="" coords="203,244,287,271"/>
+<map id="SikendeRTOS/SikenderOS/HAL/src/cpu.c" name="SikendeRTOS/SikenderOS/HAL/src/cpu.c">
+<area shape="rect" id="node1" title="Contains CPU Initializations and Register definition (this is example bc project uses legacy register..." alt="" coords="5,5,184,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="67,95,122,121"/>
 </map>

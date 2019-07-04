@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['lastsw1',['LastSW1',['../_o_s_8c.html#a163249fde69018f59b772548ee0bfc41',1,'OS.c']]],
-  ['lastsw2',['LastSW2',['../_o_s_8c.html#ab8ff29c842b2aeb6cf8cbcb7831ec52d',1,'OS.c']]]
+  ['mailbox',['MailBox',['../_o_s_8c.html#a25502d770ae491b8e5eb7c932e3c5449',1,'OS.c']]],
+  ['mutex_5fredled',['Mutex_REDLED',['../main_8c.html#a51bd8c4c7434bfc1653daa6753472df5',1,'main.c']]]
 ];

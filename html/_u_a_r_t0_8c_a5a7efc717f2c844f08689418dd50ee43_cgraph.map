@@ -2,11 +2,11 @@
 <area shape="rect" id="node1" title=" " alt="" coords="5,31,111,57"/>
 <area shape="rect" id="node2" href="$_u_a_r_t0_8c.html#a00e894bb188320a2f4dcd5a78b80da52" title=" " alt="" coords="164,5,264,32"/>
 <area shape="rect" id="node3" href="$_u_a_r_t0_8c.html#a4ef2f92682b12a347cf1f81cccda4da7" title=" " alt="" coords="159,56,269,83"/>
-<area shape="rect" id="node4" href="$_o_s_8c.html#aad29612829941c857ed685f40e193cd0" title=" " alt="" coords="317,56,392,83"/>
+<area shape="rect" id="node4" href="$_o_s_8h.html#aad29612829941c857ed685f40e193cd0" title="semaphore value decrement" alt="" coords="317,56,392,83"/>
 <area shape="rect" id="node5" href="$startup_8h.html#a2bd85031589c754845b826ef8a50fe15" title="Start Criticat Sections, Disable Global Interrupts." alt="" coords="440,5,531,32"/>
-<area shape="rect" id="node6" href="$_o_s_8c.html#aef10d0f111dd7005eb47910c2c539774" title=" " alt="" coords="445,56,525,83"/>
+<area shape="rect" id="node6" href="$_o_s_8c.html#aef10d0f111dd7005eb47910c2c539774" title="Add current TCB to blocked list then yield, ratatatat." alt="" coords="445,56,525,83"/>
 <area shape="rect" id="node10" href="$startup_8h.html#a334154d527e554c179f59f15789a9034" title="End of critical section (ISR = prev ISR) @parameter sr previously saved PSR." alt="" coords="443,107,528,133"/>
 <area shape="rect" id="node7" href="$_o_s_8c.html#aad5d03b551650383d80786160b0c5e37" title="UnLinkTCB Remove thread form Doubly LL of TCB, copy pasta." alt="" coords="621,5,708,32"/>
-<area shape="rect" id="node8" href="$_o_s_8c.html#adf29cacb24e7fe15bc46811f994eaa57" title=" " alt="" coords="579,56,751,83"/>
-<area shape="rect" id="node9" href="$_o_s_8c.html#a4e71587568a2a48931a35615cad1b5db" title=" " alt="" coords="615,107,714,133"/>
+<area shape="rect" id="node8" href="$_o_s_8c.html#adf29cacb24e7fe15bc46811f994eaa57" title="Add TCB to blocked Linked list of semaphore." alt="" coords="579,56,751,83"/>
+<area shape="rect" id="node9" href="$_o_s_8c.html#a4e71587568a2a48931a35615cad1b5db" title="This function suspends current thread by forcing context switch call." alt="" coords="615,107,714,133"/>
 </map>

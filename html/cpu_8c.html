@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SikendeRTOS: SikendeRTOS/SikenderOS/HAL/cpu.c File Reference</title>
+<title>SikendeRTOS: SikendeRTOS/SikenderOS/HAL/src/cpu.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -95,18 +95,14 @@ $(document).ready(function(){initNavTree('cpu_8c.html','');});
 
 <p>Contains CPU Initializations and Register definition (this is example bc project uses legacy register map) Should contain all wrapper/abstracted functions for peripheral setup and use.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="cpu_8h_source.html">cpu.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;cpu.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for cpu.c:</div>
 <div class="dyncontent">
-<div class="center"><img src="cpu_8c__incl.png" border="0" usemap="#_sikende_r_t_o_s_2_sikender_o_s_2_h_a_l_2cpu_8c" alt=""/></div>
-<map name="_sikende_r_t_o_s_2_sikender_o_s_2_h_a_l_2cpu_8c" id="_sikende_r_t_o_s_2_sikender_o_s_2_h_a_l_2cpu_8c">
-<area shape="rect"  title="Contains CPU Initializations and Register definition (this is example bc project uses legacy register..." alt="" coords="76,5,255,47"/>
-<area shape="rect"  href="cpu_8h.html" title="Contains CPU Initialization and Register functions/definitions." alt="" coords="138,95,193,121"/>
-<area shape="rect"  href="tm4c123gh6pm_8h.html" title="Register location header of TM4C123GH6PM." alt="" coords="5,169,128,196"/>
-<area shape="rect"  title=" " alt="" coords="173,319,238,345"/>
-<area shape="rect"  href="_p_l_l_8h.html" title="Sets Clock Speed." alt="" coords="211,169,267,196"/>
-<area shape="rect"  href="cpu__vars_8h.html" title="Contains CPU/Compilter variables." alt="" coords="203,244,287,271"/>
+<div class="center"><img src="cpu_8c__incl.png" border="0" usemap="#_sikende_r_t_o_s_2_sikender_o_s_2_h_a_l_2src_2cpu_8c" alt=""/></div>
+<map name="_sikende_r_t_o_s_2_sikender_o_s_2_h_a_l_2src_2cpu_8c" id="_sikende_r_t_o_s_2_sikender_o_s_2_h_a_l_2src_2cpu_8c">
+<area shape="rect"  title="Contains CPU Initializations and Register definition (this is example bc project uses legacy register..." alt="" coords="5,5,184,47"/>
+<area shape="rect"  title=" " alt="" coords="67,95,122,121"/>
 </map>
 </div>
 </div>
@@ -114,8 +110,9 @@ Include dependency graph for cpu.c:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a861b7a16395b00d70f8f553db10a77f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cpu_8c.html#a861b7a16395b00d70f8f553db10a77f4">CLOCK_SystemEnable</a> (void)</td></tr>
-<tr class="separator:a861b7a16395b00d70f8f553db10a77f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7dabcf602ec382ccbbbe3c11822a462"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cpu_8c.html#ae7dabcf602ec382ccbbbe3c11822a462">CLOCK_Init</a> (void)</td></tr>
+<tr class="memdesc:ae7dabcf602ec382ccbbbe3c11822a462"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize clock/PLL of TM4C123 launchpad at 80 MhZ.  <a href="#ae7dabcf602ec382ccbbbe3c11822a462">More...</a><br /></td></tr>
+<tr class="separator:ae7dabcf602ec382ccbbbe3c11822a462"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3570a8c9e1266519ad1c7e00093812b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cpu_8c.html#ab3570a8c9e1266519ad1c7e00093812b">LED_Init</a> (void)</td></tr>
 <tr class="memdesc:ab3570a8c9e1266519ad1c7e00093812b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize ports for blinking LEDs on TM4C123/TM4C129 Development Board example function.  <a href="#ab3570a8c9e1266519ad1c7e00093812b">More...</a><br /></td></tr>
 <tr class="separator:ab3570a8c9e1266519ad1c7e00093812b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,14 +123,14 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition in file <a class="el" href="cpu_8c_source.html">cpu.c</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a861b7a16395b00d70f8f553db10a77f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a861b7a16395b00d70f8f553db10a77f4">&#9670;&nbsp;</a></span>CLOCK_SystemEnable()</h2>
+<a id="ae7dabcf602ec382ccbbbe3c11822a462"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7dabcf602ec382ccbbbe3c11822a462">&#9670;&nbsp;</a></span>CLOCK_Init()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void CLOCK_SystemEnable </td>
+          <td class="memname">void CLOCK_Init </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -142,14 +139,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cpu_8c_source.html#l00011">11</a> of file <a class="el" href="cpu_8c_source.html">cpu.c</a>.</p>
+<p>Initialize clock/PLL of TM4C123 launchpad at 80 MhZ. </p>
+<p>Initialize system clock (PLL) </p>
+
+<p class="definition">Definition at line <a class="el" href="cpu_8c_source.html#l00015">15</a> of file <a class="el" href="cpu_8c_source.html">cpu.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="cpu_8c_a861b7a16395b00d70f8f553db10a77f4_cgraph.png" border="0" usemap="#cpu_8c_a861b7a16395b00d70f8f553db10a77f4_cgraph" alt=""/></div>
-<map name="cpu_8c_a861b7a16395b00d70f8f553db10a77f4_cgraph" id="cpu_8c_a861b7a16395b00d70f8f553db10a77f4_cgraph">
-<area shape="rect"  title=" " alt="" coords="5,5,164,32"/>
-<area shape="rect"  href="_p_l_l_8c.html#a9b5c08b1f356bdb16a63306e11e2fdb6" title=" " alt="" coords="212,5,281,32"/>
+<div class="center"><img src="cpu_8c_ae7dabcf602ec382ccbbbe3c11822a462_cgraph.png" border="0" usemap="#cpu_8c_ae7dabcf602ec382ccbbbe3c11822a462_cgraph" alt=""/></div>
+<map name="cpu_8c_ae7dabcf602ec382ccbbbe3c11822a462_cgraph" id="cpu_8c_ae7dabcf602ec382ccbbbe3c11822a462_cgraph">
+<area shape="rect"  title="Initialize clock/PLL of TM4C123 launchpad at 80 MhZ." alt="" coords="5,5,96,32"/>
+<area shape="rect"  href="_p_l_l_8h.html#a9b5c08b1f356bdb16a63306e11e2fdb6" title=" " alt="" coords="144,5,213,32"/>
 </map>
 </div>
 
@@ -174,7 +174,7 @@ Here is the call graph for this function:</div>
 <p>Initialize ports for blinking LEDs on TM4C123/TM4C129 Development Board example function. </p>
 <p>Initialize development board LEDS, example function. </p>
 
-<p class="definition">Definition at line <a class="el" href="cpu_8c_source.html#l00023">23</a> of file <a class="el" href="cpu_8c_source.html">cpu.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cpu_8c_source.html#l00026">26</a> of file <a class="el" href="cpu_8c_source.html">cpu.c</a>.</p>
 
 </div>
 </div>
@@ -183,7 +183,7 @@ Here is the call graph for this function:</div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_b8f6abffc78acec997478d109acf9148.html">SikendeRTOS</a></li><li class="navelem"><a class="el" href="dir_a4458d604b8c2e629a88b058174e2b3f.html">SikenderOS</a></li><li class="navelem"><a class="el" href="dir_213d4a3950a82888692d05f6250aeb40.html">HAL</a></li><li class="navelem"><a class="el" href="cpu_8c.html">cpu.c</a></li>
+    <li class="navelem"><a class="el" href="dir_b8f6abffc78acec997478d109acf9148.html">SikendeRTOS</a></li><li class="navelem"><a class="el" href="dir_a4458d604b8c2e629a88b058174e2b3f.html">SikenderOS</a></li><li class="navelem"><a class="el" href="dir_213d4a3950a82888692d05f6250aeb40.html">HAL</a></li><li class="navelem"><a class="el" href="dir_09cf9b32ae8c27fde1dee41336f46861.html">src</a></li><li class="navelem"><a class="el" href="cpu_8c.html">cpu.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

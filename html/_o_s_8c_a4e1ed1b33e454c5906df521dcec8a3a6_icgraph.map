@@ -1,4 +1,4 @@
 <map id="Peripheral_Init" name="Peripheral_Init">
-<area shape="rect" id="node1" title=" " alt="" coords="119,5,223,32"/>
-<area shape="rect" id="node2" href="$_o_s_8h.html#acb6df8f47f418aad9c9a9e045d7d1e6d" title="OS_Init initialize operating system, disable interrupts until OS_Launch initialize OS controlled I/O:..." alt="" coords="5,5,71,32"/>
+<area shape="rect" id="node1" title="This function initializes extra IO used by OS, add new inits here." alt="" coords="119,5,223,32"/>
+<area shape="rect" id="node2" href="$_o_s_8c.html#acb6df8f47f418aad9c9a9e045d7d1e6d" title="initialize operating system, disable interrupts until OS_Launch initialize OS controlled I/O: serial,..." alt="" coords="5,5,71,32"/>
 </map>

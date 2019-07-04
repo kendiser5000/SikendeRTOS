@@ -9,5 +9,6 @@ var _o_s_config_8h =
     [ "TIME_1MS", "_o_s_config_8h.html#ad6445469b3084b0c8a8ea272e8a40a17", null ],
     [ "TIME_250US", "_o_s_config_8h.html#aae4936d8a1bad649da44cacada40b157", null ],
     [ "TIME_2MS", "_o_s_config_8h.html#a601fb0d91385070bae69c2b1c4e63162", null ],
-    [ "TIME_500US", "_o_s_config_8h.html#a5bd8a6024a3e7cd43b7fe30988ca81e8", null ]
+    [ "TIME_500US", "_o_s_config_8h.html#a5bd8a6024a3e7cd43b7fe30988ca81e8", null ],
+    [ "FIFO_t", "_o_s_config_8h.html#a7063631d2ff1d605db2f1fda7452426b", null ]
 ];

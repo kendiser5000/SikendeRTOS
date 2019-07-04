@@ -1,11 +1,5 @@
 var main_8c =
 [
-    [ "BLUE_BLINK", "main_8c.html#a26bd32f1d9d1f034f1ae68cfc08f742a", null ],
-    [ "BLUE_LED", "main_8c.html#a41c7fcbe209a1c236fd1b8e35bd8b55a", null ],
-    [ "GREEN_BLINK", "main_8c.html#a33db289c538fdf20b91d13490f49e315", null ],
-    [ "GREEN_LED", "main_8c.html#a01649d652fa50957c6ef3c32b1238038", null ],
-    [ "RED_BLINK", "main_8c.html#a7ca2390480eafa9a2940082d3aa38b10", null ],
-    [ "RED_LED", "main_8c.html#a073dbcb7f5bc4f4b45dc048b55eaff3d", null ],
     [ "DummyThread", "main_8c.html#a9ce48e0bf9e3abbc2b0b1e2977465825", null ],
     [ "Flash_Blue", "main_8c.html#ac3cc6594a462b39325ff31f7edfca240", null ],
     [ "Flash_Green", "main_8c.html#a1c718b1780075752622c5453813ac6b1", null ],

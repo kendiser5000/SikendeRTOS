@@ -1,5 +1,5 @@
 <map id="UnBlockTCB" name="UnBlockTCB">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,101,57"/>
-<area shape="rect" id="node2" href="$_o_s_8c.html#a53eb4d4d5ecbbfd138aebebda1ec9ed1" title=" " alt="" coords="149,5,360,32"/>
+<area shape="rect" id="node1" title="Remove TCB from blocked list." alt="" coords="5,31,101,57"/>
+<area shape="rect" id="node2" href="$_o_s_8c.html#a53eb4d4d5ecbbfd138aebebda1ec9ed1" title="Remove TCB from blocked list, assuiming thread already blocked, else rip program." alt="" coords="149,5,360,32"/>
 <area shape="rect" id="node3" href="$_o_s_8c.html#a73955a19ff51ef9c72cbdca13afbaf01" title="LinkTCB Add TCB to doubly Linked List, copy pasta ee 312." alt="" coords="219,56,290,83"/>
 </map>

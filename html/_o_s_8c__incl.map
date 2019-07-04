@@ -1,11 +1,12 @@
-<map id="SikendeRTOS/SikenderOS/RTOS/OS.c" name="SikendeRTOS/SikenderOS/RTOS/OS.c">
-<area shape="rect" id="node1" title="Contains functions to run OS." alt="" coords="102,5,281,47"/>
-<area shape="rect" id="node2" href="$_o_s_8h.html" title="Functions for OS." alt="" coords="48,95,100,121"/>
-<area shape="rect" id="node5" href="$cpu_8h.html" title="Contains CPU Initialization and Register functions/definitions." alt="" coords="143,169,198,196"/>
-<area shape="rect" id="node8" href="$cpu__vars_8h.html" title="Contains CPU/Compilter variables." alt="" coords="214,319,298,345"/>
-<area shape="rect" id="node9" href="$startup_8h.html" title="Contains Enable/Disable Interrupts, Start/EndCritical from startup file Used to control global ISR fl..." alt="" coords="192,95,266,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="11,393,76,420"/>
-<area shape="rect" id="node4" href="$_o_s_config_8h.html" title="Configuration setup for OS." alt="" coords="30,169,118,196"/>
-<area shape="rect" id="node6" href="$tm4c123gh6pm_8h.html" title="Register location header of TM4C123GH6PM." alt="" coords="81,244,204,271"/>
-<area shape="rect" id="node7" href="$_p_l_l_8h.html" title="Sets Clock Speed." alt="" coords="228,244,284,271"/>
+<map id="SikendeRTOS/SikenderOS/RTOS/src/OS.c" name="SikendeRTOS/SikenderOS/RTOS/src/OS.c">
+<area shape="rect" id="node1" title="Contains functions to run OS." alt="" coords="55,5,234,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,169,60,196"/>
+<area shape="rect" id="node3" href="$startup_8h.html" title="Contains Enable/Disable Interrupts, Start/EndCritical from startup file Used to control global ISR fl..." alt="" coords="33,95,107,121"/>
+<area shape="rect" id="node4" href="$_timer_8h.html" title="Periodic Timer setup for TM4c123." alt="" coords="100,244,165,271"/>
+<area shape="rect" id="node6" href="$_switch_8h.html" title=" " alt="" coords="182,169,254,196"/>
+<area shape="rect" id="node8" href="$_o_s_8h.html" title="Functions for OS." alt="" coords="296,95,348,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="199,319,264,345"/>
+<area shape="rect" id="node7" href="$_h_a_l_2inc_2cpu__vars_8h.html" title=" " alt="" coords="189,244,273,271"/>
+<area shape="rect" id="node9" href="$_o_s_config_8h.html" title="Configuration setup for OS." alt="" coords="278,169,366,196"/>
+<area shape="rect" id="node10" href="$_r_t_o_s_2inc_2cpu__vars_8h.html" title=" " alt="" coords="297,244,381,271"/>
 </map>

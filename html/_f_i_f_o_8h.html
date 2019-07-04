@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SikendeRTOS: SikendeRTOS/SikenderOS/Inc/FIFO.h File Reference</title>
+<title>SikendeRTOS: SikendeRTOS/SikenderOS/Project/inc/FIFO.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -96,25 +96,23 @@ $(document).ready(function(){initNavTree('_f_i_f_o_8h.html','');});
 <p>Provides Functions to initialize FIFO, uses index implementation and macro.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="startup_8h_source.html">startup.h</a>&quot;</code><br />
+<code>#include &quot;cpu_vars.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for FIFO.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="_f_i_f_o_8h__incl.png" border="0" usemap="#_sikende_r_t_o_s_2_sikender_o_s_2_inc_2_f_i_f_o_8h" alt=""/></div>
-<map name="_sikende_r_t_o_s_2_sikender_o_s_2_inc_2_f_i_f_o_8h" id="_sikende_r_t_o_s_2_sikender_o_s_2_inc_2_f_i_f_o_8h">
-<area shape="rect"  title="Provides Functions to initialize FIFO, uses index implementation and macro." alt="" coords="76,5,255,47"/>
-<area shape="rect"  href="startup_8h.html" title="Contains Enable/Disable Interrupts, Start/EndCritical from startup file Used to control global ISR fl..." alt="" coords="129,95,202,121"/>
-<area shape="rect"  href="cpu_8h.html" title="Contains CPU Initialization and Register functions/definitions." alt="" coords="138,169,193,196"/>
-<area shape="rect"  href="tm4c123gh6pm_8h.html" title="Register location header of TM4C123GH6PM." alt="" coords="5,244,128,271"/>
-<area shape="rect"  title=" " alt="" coords="173,393,238,420"/>
-<area shape="rect"  href="_p_l_l_8h.html" title="Sets Clock Speed." alt="" coords="211,244,267,271"/>
-<area shape="rect"  href="cpu__vars_8h.html" title="Contains CPU/Compilter variables." alt="" coords="203,319,287,345"/>
+<div class="center"><img src="_f_i_f_o_8h__incl.png" border="0" usemap="#_sikende_r_t_o_s_2_sikender_o_s_2_project_2inc_2_f_i_f_o_8h" alt=""/></div>
+<map name="_sikende_r_t_o_s_2_sikender_o_s_2_project_2inc_2_f_i_f_o_8h" id="_sikende_r_t_o_s_2_sikender_o_s_2_project_2inc_2_f_i_f_o_8h">
+<area shape="rect"  title="Provides Functions to initialize FIFO, uses index implementation and macro." alt="" coords="5,5,184,47"/>
+<area shape="rect"  href="startup_8h.html" title="Contains Enable/Disable Interrupts, Start/EndCritical from startup file Used to control global ISR fl..." alt="" coords="7,95,81,121"/>
+<area shape="rect"  title=" " alt="" coords="105,95,189,121"/>
+<area shape="rect"  title=" " alt="" coords="17,169,71,196"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="_f_i_f_o_8h__dep__incl.png" border="0" usemap="#_sikende_r_t_o_s_2_sikender_o_s_2_inc_2_f_i_f_o_8hdep" alt=""/></div>
-<map name="_sikende_r_t_o_s_2_sikender_o_s_2_inc_2_f_i_f_o_8hdep" id="_sikende_r_t_o_s_2_sikender_o_s_2_inc_2_f_i_f_o_8hdep">
+<div class="center"><img src="_f_i_f_o_8h__dep__incl.png" border="0" usemap="#_sikende_r_t_o_s_2_sikender_o_s_2_project_2inc_2_f_i_f_o_8hdep" alt=""/></div>
+<map name="_sikende_r_t_o_s_2_sikender_o_s_2_project_2inc_2_f_i_f_o_8hdep" id="_sikende_r_t_o_s_2_sikender_o_s_2_project_2inc_2_f_i_f_o_8hdep">
 <area shape="rect"  title="Provides Functions to initialize FIFO, uses index implementation and macro." alt="" coords="5,5,184,47"/>
 <area shape="rect"  href="_u_a_r_t0_8c.html" title=" " alt="" coords="5,95,184,136"/>
 </map>
@@ -179,10 +177,9 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">uint32_t <span class="keyword">volatile</span> NAME ## PutI;    \</div><div class="line">uint32_t <span class="keyword">volatile</span> NAME ## GetI;    \</div><div class="line">TYPE <span class="keyword">static</span> NAME ## Fifo [SIZE];        \</div><div class="line">void NAME ## Fifo_Init(<span class="keywordtype">void</span>){ <span class="keywordtype">long</span> sr;  \</div><div class="line">  sr = <a class="code" href="startup_8h.html#a2bd85031589c754845b826ef8a50fe15">StartCritical</a>();                 \</div><div class="line">  NAME ## PutI = NAME ## GetI = 0;      \</div><div class="line">  EndCritical(sr);                      \</div><div class="line">}                                       \</div><div class="line">int NAME ## Fifo_Put (TYPE <a class="code" href="struct_mail_box.html#a1e43bf7d608e87228b625cca2c04d641">data</a>){       \</div><div class="line">  if(( NAME ## PutI - NAME ## GetI ) &amp; ~(SIZE-1)){  \</div><div class="line">    return(FAIL);      \</div><div class="line">  }                    \</div><div class="line">  NAME ## Fifo[ NAME ## PutI &amp;(SIZE-1)] = <a class="code" href="struct_mail_box.html#a1e43bf7d608e87228b625cca2c04d641">data</a>; \</div><div class="line">  NAME ## PutI ## ++;  \</div><div class="line">  return(SUCCESS);     \</div><div class="line">}                      \</div><div class="line">int NAME ## Fifo_Get (TYPE *datapt){  \</div><div class="line">  if( NAME ## PutI == NAME ## GetI ){ \</div><div class="line">    return(FAIL);      \</div><div class="line">  }                    \</div><div class="line">  *datapt = NAME ## Fifo[ NAME ## GetI &amp;(SIZE-1)];  \</div><div class="line">  NAME ## GetI ## ++;  \</div><div class="line">  return(SUCCESS);     \</div><div class="line">}                      \</div><div class="line">unsigned <span class="keywordtype">short</span> NAME ## Fifo_Size (<span class="keywordtype">void</span>){  \</div><div class="line"> return ((<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span>)( NAME ## PutI - NAME ## GetI ));  \</div><div class="line">}</div><div class="ttc" id="startup_8h_html_a2bd85031589c754845b826ef8a50fe15"><div class="ttname"><a href="startup_8h.html#a2bd85031589c754845b826ef8a50fe15">StartCritical</a></div><div class="ttdeci">INT32U StartCritical(void)</div><div class="ttdoc">Start Criticat Sections, Disable Global Interrupts.</div></div>
-<div class="ttc" id="struct_mail_box_html_a1e43bf7d608e87228b625cca2c04d641"><div class="ttname"><a href="struct_mail_box.html#a1e43bf7d608e87228b625cca2c04d641">MailBox::data</a></div><div class="ttdeci">uint32_t data</div><div class="ttdef"><b>Definition:</b> <a href="_o_s_8h_source.html#l00033">OS.h:33</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">uint32_t <span class="keyword">volatile</span> NAME ## PutI;    \</div><div class="line">uint32_t <span class="keyword">volatile</span> NAME ## GetI;    \</div><div class="line">TYPE <span class="keyword">static</span> NAME ## Fifo [SIZE];        \</div><div class="line">void NAME ## Fifo_Init(<span class="keywordtype">void</span>){ <span class="keywordtype">long</span> sr;  \</div><div class="line">  sr = <a class="code" href="startup_8h.html#a2bd85031589c754845b826ef8a50fe15">StartCritical</a>();                 \</div><div class="line">  NAME ## PutI = NAME ## GetI = 0;      \</div><div class="line">  EndCritical(sr);                      \</div><div class="line">}                                       \</div><div class="line">int NAME ## Fifo_Put (TYPE data){       \</div><div class="line">  if(( NAME ## PutI - NAME ## GetI ) &amp; ~(SIZE-1)){  \</div><div class="line">    return(FAIL);      \</div><div class="line">  }                    \</div><div class="line">  NAME ## Fifo[ NAME ## PutI &amp;(SIZE-1)] = data; \</div><div class="line">  NAME ## PutI ## ++;  \</div><div class="line">  return(SUCCESS);     \</div><div class="line">}                      \</div><div class="line">int NAME ## Fifo_Get (TYPE *datapt){  \</div><div class="line">  if( NAME ## PutI == NAME ## GetI ){ \</div><div class="line">    return(FAIL);      \</div><div class="line">  }                    \</div><div class="line">  *datapt = NAME ## Fifo[ NAME ## GetI &amp;(SIZE-1)];  \</div><div class="line">  NAME ## GetI ## ++;  \</div><div class="line">  return(SUCCESS);     \</div><div class="line">}                      \</div><div class="line">unsigned <span class="keywordtype">short</span> NAME ## Fifo_Size (<span class="keywordtype">void</span>){  \</div><div class="line"> return ((<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span>)( NAME ## PutI - NAME ## GetI ));  \</div><div class="line">}</div><div class="ttc" id="startup_8h_html_a2bd85031589c754845b826ef8a50fe15"><div class="ttname"><a href="startup_8h.html#a2bd85031589c754845b826ef8a50fe15">StartCritical</a></div><div class="ttdeci">INT32U StartCritical(void)</div><div class="ttdoc">Start Criticat Sections, Disable Global Interrupts.</div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_f_i_f_o_8h_source.html#l00032">32</a> of file <a class="el" href="_f_i_f_o_8h_source.html">FIFO.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_i_f_o_8h_source.html#l00038">38</a> of file <a class="el" href="_f_i_f_o_8h_source.html">FIFO.h</a>.</p>
 
 </div>
 </div>
@@ -230,7 +227,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_i_f_o_8h_source.html#l00066">66</a> of file <a class="el" href="_f_i_f_o_8h_source.html">FIFO.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_i_f_o_8h_source.html#l00072">72</a> of file <a class="el" href="_f_i_f_o_8h_source.html">FIFO.h</a>.</p>
 
 </div>
 </div>
@@ -239,7 +236,7 @@ Macros</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_b8f6abffc78acec997478d109acf9148.html">SikendeRTOS</a></li><li class="navelem"><a class="el" href="dir_a4458d604b8c2e629a88b058174e2b3f.html">SikenderOS</a></li><li class="navelem"><a class="el" href="dir_d1bc81c4cbcc49a5687eb19018117c9e.html">Inc</a></li><li class="navelem"><a class="el" href="_f_i_f_o_8h.html">FIFO.h</a></li>
+    <li class="navelem"><a class="el" href="dir_b8f6abffc78acec997478d109acf9148.html">SikendeRTOS</a></li><li class="navelem"><a class="el" href="dir_a4458d604b8c2e629a88b058174e2b3f.html">SikenderOS</a></li><li class="navelem"><a class="el" href="dir_5d5c42069b943ca84469524c04f639fb.html">Project</a></li><li class="navelem"><a class="el" href="dir_67cdde1f31f81041d37420b3ca76605a.html">inc</a></li><li class="navelem"><a class="el" href="_f_i_f_o_8h.html">FIFO.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

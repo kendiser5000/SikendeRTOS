@@ -1,4 +1,4 @@
 <map id="SysTick_Handler" name="SysTick_Handler">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,125,32"/>
-<area shape="rect" id="node2" href="$_o_s_8c.html#a8476cf7898494fd1499c79769d65ed34" title=" " alt="" coords="173,5,280,32"/>
+<area shape="rect" id="node1" title="This function decides next thread to run,." alt="" coords="5,5,125,32"/>
+<area shape="rect" id="node2" href="$_o_s_8c.html#a8476cf7898494fd1499c79769d65ed34" title="This function runs next highest priority thread, PRIORITY SCHEDULER." alt="" coords="173,5,280,32"/>
 </map>

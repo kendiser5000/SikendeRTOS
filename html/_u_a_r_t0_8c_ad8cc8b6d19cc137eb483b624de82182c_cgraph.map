@@ -1,6 +1,6 @@
 <map id="AddIndexFifo" name="AddIndexFifo">
 <area shape="rect" id="node1" title=" " alt="" coords="5,31,103,57"/>
-<area shape="rect" id="node2" href="$_o_s_8c.html#af580c6222330cc3d214763ddac7800b9" title=" " alt="" coords="151,31,281,57"/>
+<area shape="rect" id="node2" href="$_o_s_8h.html#ae3a59ef7ce0ba07d23ab8c421c5b7f15" title="Initialize semaphore to given value." alt="" coords="151,31,281,57"/>
 <area shape="rect" id="node3" href="$startup_8h.html#a2bd85031589c754845b826ef8a50fe15" title="Start Criticat Sections, Disable Global Interrupts." alt="" coords="329,5,420,32"/>
 <area shape="rect" id="node4" href="$startup_8h.html#a334154d527e554c179f59f15789a9034" title="End of critical section (ISR = prev ISR) @parameter sr previously saved PSR." alt="" coords="332,56,417,83"/>
 </map>

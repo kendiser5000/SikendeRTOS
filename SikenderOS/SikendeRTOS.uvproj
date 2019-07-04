@@ -376,7 +376,7 @@
               <MiscControls>--C99</MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\;.\CMSIS;.\Inc;.\Src;.\Objects;.\Listings;.\HAL;.\RTOS</IncludePath>
+              <IncludePath>.\;.\CMSIS;.\Project\inc;.\Project\src;.\Objects;.\Listings;.\HAL;.\RTOS;.\RTOS\src;.\RTOS\inc;.\HAL\src;.\HAL\inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -421,14 +421,19 @@
           <GroupName>Src</GroupName>
           <Files>
             <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Src\main.c</FilePath>
-            </File>
-            <File>
               <FileName>Interpreter.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Src\Interpreter.c</FilePath>
+              <FilePath>.\Project\src\Interpreter.c</FilePath>
+            </File>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Project\src\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>retarget.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Project\src\retarget.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -436,19 +441,19 @@
           <GroupName>Inc</GroupName>
           <Files>
             <File>
-              <FileName>retarget.h</FileName>
+              <FileName>FIFO.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\Inc\retarget.h</FilePath>
+              <FilePath>.\Project\inc\FIFO.h</FilePath>
             </File>
             <File>
               <FileName>Interpreter.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\Inc\Interpreter.h</FilePath>
+              <FilePath>.\Project\inc\Interpreter.h</FilePath>
             </File>
             <File>
-              <FileName>FIFO.h</FileName>
+              <FileName>retarget.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\Inc\FIFO.h</FilePath>
+              <FilePath>.\Project\inc\retarget.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -464,51 +469,6 @@
               <FileName>startup.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\CMSIS\startup.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>HAL</GroupName>
-          <Files>
-            <File>
-              <FileName>tm4c123gh6pm.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\HAL\tm4c123gh6pm.h</FilePath>
-            </File>
-            <File>
-              <FileName>cpu.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\HAL\cpu.h</FilePath>
-            </File>
-            <File>
-              <FileName>cpu.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\HAL\cpu.c</FilePath>
-            </File>
-            <File>
-              <FileName>PLL.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\HAL\PLL.c</FilePath>
-            </File>
-            <File>
-              <FileName>PLL.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\HAL\PLL.h</FilePath>
-            </File>
-            <File>
-              <FileName>cpu_vars.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\HAL\cpu_vars.h</FilePath>
-            </File>
-            <File>
-              <FileName>UART0.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\HAL\UART0.c</FilePath>
-            </File>
-            <File>
-              <FileName>UART0.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\HAL\UART0.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -585,24 +545,99 @@
           </GroupOption>
           <Files>
             <File>
-              <FileName>OS.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\RTOS\OS.c</FilePath>
+              <FileName>cpu.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\RTOS\inc\cpu.h</FilePath>
+            </File>
+            <File>
+              <FileName>cpu_vars.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\RTOS\inc\cpu_vars.h</FilePath>
             </File>
             <File>
               <FileName>OS.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\RTOS\OS.h</FilePath>
-            </File>
-            <File>
-              <FileName>OSAsm.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\RTOS\OSAsm.s</FilePath>
+              <FilePath>.\RTOS\inc\OS.h</FilePath>
             </File>
             <File>
               <FileName>OSConfig.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\RTOS\OSConfig.h</FilePath>
+              <FilePath>.\RTOS\inc\OSConfig.h</FilePath>
+            </File>
+            <File>
+              <FileName>OS.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\RTOS\src\OS.c</FilePath>
+            </File>
+            <File>
+              <FileName>OSAsm.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\RTOS\src\OSAsm.s</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>HAL</GroupName>
+          <Files>
+            <File>
+              <FileName>cpu.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HAL\src\cpu.c</FilePath>
+            </File>
+            <File>
+              <FileName>PLL.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HAL\src\PLL.c</FilePath>
+            </File>
+            <File>
+              <FileName>Switch.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HAL\src\Switch.c</FilePath>
+            </File>
+            <File>
+              <FileName>Timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HAL\src\Timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>UART0.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HAL\src\UART0.c</FilePath>
+            </File>
+            <File>
+              <FileName>cpu.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\HAL\inc\cpu.h</FilePath>
+            </File>
+            <File>
+              <FileName>cpu_vars.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\HAL\inc\cpu_vars.h</FilePath>
+            </File>
+            <File>
+              <FileName>PLL.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\HAL\inc\PLL.h</FilePath>
+            </File>
+            <File>
+              <FileName>Switch.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\HAL\inc\Switch.h</FilePath>
+            </File>
+            <File>
+              <FileName>Timer.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\HAL\inc\Timer.h</FilePath>
+            </File>
+            <File>
+              <FileName>tm4c123gh6pm.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\HAL\inc\tm4c123gh6pm.h</FilePath>
+            </File>
+            <File>
+              <FileName>UART0.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\HAL\inc\UART0.h</FilePath>
             </File>
           </Files>
         </Group>

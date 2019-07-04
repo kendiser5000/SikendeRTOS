@@ -1,10 +1,13 @@
 <map id="OS_Init" name="OS_Init">
-<area shape="rect" id="node1" title="OS_Init initialize operating system, disable interrupts until OS_Launch initialize OS controlled I/O:..." alt="" coords="5,81,71,108"/>
-<area shape="rect" id="node2" href="$_o_s_8c.html#a682f413264c38d624e690a11e1640e92" title=" " alt="" coords="119,5,264,32"/>
-<area shape="rect" id="node3" href="$_o_s_8c.html#a4e1ed1b33e454c5906df521dcec8a3a6" title=" " alt="" coords="139,56,243,83"/>
-<area shape="rect" id="node7" href="$_o_s_8c.html#aba7f27cef9b384cd94fb33240ea3a9c3" title=" " alt="" coords="147,107,235,133"/>
-<area shape="rect" id="node8" href="$_o_s_8c.html#aeb71ef4b996788e4aa8cda6ef617f58f" title="SysTick_Init initialize Systick interrupt and values." alt="" coords="145,157,238,184"/>
-<area shape="rect" id="node4" href="$_o_s_8c.html#ad3705c1701a491c3af4be5117ac16458" title=" " alt="" coords="312,56,407,83"/>
-<area shape="rect" id="node5" href="$startup_8h.html#a2bd85031589c754845b826ef8a50fe15" title="Start Criticat Sections, Disable Global Interrupts." alt="" coords="455,31,545,57"/>
-<area shape="rect" id="node6" href="$startup_8h.html#a334154d527e554c179f59f15789a9034" title="End of critical section (ISR = prev ISR) @parameter sr previously saved PSR." alt="" coords="457,81,543,108"/>
+<area shape="rect" id="node1" title="initialize operating system, disable interrupts until OS_Launch initialize OS controlled I/O: serial,..." alt="" coords="5,107,71,133"/>
+<area shape="rect" id="node2" href="$_o_s_8c.html#a682f413264c38d624e690a11e1640e92" title=" " alt="" coords="119,31,264,57"/>
+<area shape="rect" id="node3" href="$_o_s_8c.html#a4e1ed1b33e454c5906df521dcec8a3a6" title="This function initializes extra IO used by OS, add new inits here." alt="" coords="139,81,243,108"/>
+<area shape="rect" id="node10" href="$_o_s_8c.html#aba7f27cef9b384cd94fb33240ea3a9c3" title="Set Threads to default values for unused." alt="" coords="147,132,235,159"/>
+<area shape="rect" id="node11" href="$_o_s_8c.html#aa73e6affc7f5fb9ff4ece72f15417244" title="Set priority of Systick and PendSV (Context Switch handlers)" alt="" coords="124,183,259,209"/>
+<area shape="rect" id="node4" href="$_timer_8h.html#a1f9f3c8e9e768dee252af6e09ebf3129" title=" " alt="" coords="347,5,442,32"/>
+<area shape="rect" id="node7" href="$_o_s_8c.html#a2f33edf295f53211431ba65dd102707c" title="Update Sleep timer and run through linked list and remove any sleeping threads." alt="" coords="332,107,457,133"/>
+<area shape="rect" id="node8" href="$_timer_8h.html#aae3647c92f6dde0904217bcc18cc2c0b" title=" " alt="" coords="347,56,442,83"/>
+<area shape="rect" id="node9" href="$_o_s_8c.html#a0b0cc98c38e9abad9e2ac701be5e8706" title=" " alt="" coords="312,157,477,184"/>
+<area shape="rect" id="node5" href="$_timer_8c.html#a98fbe9833188539e49482a97b3f9a99c" title=" " alt="" coords="525,5,616,32"/>
+<area shape="rect" id="node6" href="$_timer_8c.html#ab951a617be3009367cd2abdb523990f6" title=" " alt="" coords="528,56,613,83"/>
 </map>

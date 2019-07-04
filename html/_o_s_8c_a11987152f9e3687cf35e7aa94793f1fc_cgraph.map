@@ -1,0 +1,13 @@
+<map id="OS_AddPeriodicThread" name="OS_AddPeriodicThread">
+<area shape="rect" id="node1" title="Adds periodic background thread. Cannot spin, sleep, die, rest, etc. cause it&#39;s ISR,..." alt="" coords="5,183,163,209"/>
+<area shape="rect" id="node2" href="$_timer_8h.html#aad0b7361116084cb820d8fedebc8c4d4" title=" " alt="" coords="211,5,305,32"/>
+<area shape="rect" id="node5" href="$_timer_8h.html#a2ac2bddbff828503c4f60f6d7e630dd7" title=" " alt="" coords="211,56,305,83"/>
+<area shape="rect" id="node6" href="$_timer_8h.html#ae65d9347e09b5bcf3975fbb0aebde062" title=" " alt="" coords="211,309,305,336"/>
+<area shape="rect" id="node7" href="$_timer_8h.html#aa0bb6b4e9fe14ef065af9b4847fe0cbf" title=" " alt="" coords="211,360,305,387"/>
+<area shape="rect" id="node8" href="$_timer_8h.html#ab634674663d0c1f9d5a161b230b9beb9" title=" " alt="" coords="211,107,305,133"/>
+<area shape="rect" id="node9" href="$_timer_8h.html#ad88cb421b298e3246fc07a5d779ac152" title=" " alt="" coords="211,157,305,184"/>
+<area shape="rect" id="node10" href="$_timer_8h.html#a710c63b1c81479808b1206f4fd5b507b" title=" " alt="" coords="211,208,305,235"/>
+<area shape="rect" id="node11" href="$_timer_8h.html#a965744d1b32a7d50bbe29dcc16bdb784" title=" " alt="" coords="211,259,305,285"/>
+<area shape="rect" id="node3" href="$_timer_8c.html#a98fbe9833188539e49482a97b3f9a99c" title=" " alt="" coords="353,107,444,133"/>
+<area shape="rect" id="node4" href="$_timer_8c.html#ab951a617be3009367cd2abdb523990f6" title=" " alt="" coords="356,157,441,184"/>
+</map>
