@@ -1,5 +1,5 @@
 # SikendeRTOS
-Embedded Real Time Operating System for ARM Microcontroller (specifically TI TM4C123)
+Embedded Real Time Operating System for ARM Microcontroller (specifically TI TM4C123GH6PM)
 
 <a href="https://kendiser5000.github.io/SikendeRTOS/index.html" title="Doxygen Docs">Doxygen Docs</a>
 
