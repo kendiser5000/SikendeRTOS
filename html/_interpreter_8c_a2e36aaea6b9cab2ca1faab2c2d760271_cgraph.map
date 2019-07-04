@@ -1,0 +1,29 @@
+<map id="Interpreter" name="Interpreter">
+<area shape="rect" id="node1" title=" " alt="" coords="5,284,85,311"/>
+<area shape="rect" id="node2" href="$_u_a_r_t0_8h.html#ad5cbed2a2222bb84e8b5c1caaa50634e" title=" " alt="" coords="158,56,238,83"/>
+<area shape="rect" id="node3" href="$_interpreter_8c.html#ac43fd57408ef9782a78ad90b3d466ed6" title=" " alt="" coords="521,183,590,209"/>
+<area shape="rect" id="node13" href="$_interpreter_8c.html#a5bca4abc7a5cf09ca8daea25e5d67d85" title=" " alt="" coords="311,5,445,32"/>
+<area shape="rect" id="node15" href="$_interpreter_8c.html#a72b8ebb864d5a2ab2a3feef2a9ba2689" title=" " alt="" coords="165,157,231,184"/>
+<area shape="rect" id="node17" href="$_interpreter_8c.html#aee5b836a491eb27d4f813f17f8682873" title=" " alt="" coords="154,461,242,488"/>
+<area shape="rect" id="node18" href="$_interpreter_8c.html#a149e93a5d83b7ddc89ebe8b7fefdcbe5" title=" " alt="" coords="133,512,263,539"/>
+<area shape="rect" id="node19" href="$_interpreter_8c.html#a9114c4f99de7fb28b6e220b582ff86af" title=" " alt="" coords="135,284,261,311"/>
+<area shape="rect" id="node4" href="$_u_a_r_t0_8h.html#ae57176b8f54ba3f337f15238d7cf8ba6" title=" " alt="" coords="665,183,741,209"/>
+<area shape="rect" id="node5" href="$_u_a_r_t0_8c.html#a4ef2f92682b12a347cf1f81cccda4da7" title=" " alt="" coords="789,183,900,209"/>
+<area shape="rect" id="node6" href="$_o_s_8h.html#aad29612829941c857ed685f40e193cd0" title="semaphore value decrement" alt="" coords="948,157,1023,184"/>
+<area shape="rect" id="node7" href="$startup_8h.html#a2bd85031589c754845b826ef8a50fe15" title="Start Criticat Sections, Disable Global Interrupts." alt="" coords="1071,107,1161,133"/>
+<area shape="rect" id="node8" href="$_o_s_8c.html#aef10d0f111dd7005eb47910c2c539774" title="Add current TCB to blocked list then yield, ratatatat." alt="" coords="1076,157,1156,184"/>
+<area shape="rect" id="node12" href="$startup_8h.html#a334154d527e554c179f59f15789a9034" title="End of critical section (ISR = prev ISR) @parameter sr previously saved PSR." alt="" coords="1073,208,1159,235"/>
+<area shape="rect" id="node9" href="$_o_s_8c.html#aad5d03b551650383d80786160b0c5e37" title="UnLinkTCB Remove thread form Doubly LL of TCB, copy pasta." alt="" coords="1252,107,1339,133"/>
+<area shape="rect" id="node10" href="$_o_s_8c.html#adf29cacb24e7fe15bc46811f994eaa57" title="Add TCB to blocked Linked list of semaphore." alt="" coords="1209,157,1381,184"/>
+<area shape="rect" id="node11" href="$_o_s_8c.html#a4e71587568a2a48931a35615cad1b5db" title="This function suspends current thread by forcing context switch call." alt="" coords="1246,208,1345,235"/>
+<area shape="rect" id="node14" href="$_u_a_r_t0_8h.html#a4ef2f92682b12a347cf1f81cccda4da7" title=" " alt="" coords="500,132,611,159"/>
+<area shape="rect" id="node16" href="$_u_a_r_t0_8h.html#a00e894bb188320a2f4dcd5a78b80da52" title=" " alt="" coords="328,56,428,83"/>
+<area shape="rect" id="node20" href="$_interpreter_8c.html#a10ac54ed249ffb7aee617ea4c511a844" title=" " alt="" coords="316,360,440,387"/>
+<area shape="rect" id="node21" href="$_interpreter_8c.html#a3d4a924cff71a4caf3cfd637e41573df" title=" " alt="" coords="325,157,431,184"/>
+<area shape="rect" id="node22" href="$_interpreter_8c.html#a35e8d00822acb2f8b65e5f903a5474dd" title=" " alt="" coords="313,309,443,336"/>
+<area shape="rect" id="node23" href="$_interpreter_8c.html#a115df44bc26fcdfbb13fd046e4ed29cd" title=" " alt="" coords="317,208,439,235"/>
+<area shape="rect" id="node24" href="$_interpreter_8c.html#ab0b16b013847b083bcaed21b01ac975f" title=" " alt="" coords="326,259,430,285"/>
+<area shape="rect" id="node25" href="$_interpreter_8c.html#a0cbe8bf10240e56591ca4fd9a4dc5683" title=" " alt="" coords="329,461,427,488"/>
+<area shape="rect" id="node26" href="$_o_s_8h.html#a866f6e5e80d65996a8411092f8a94524" title=" " alt="" coords="493,436,617,463"/>
+<area shape="rect" id="node27" href="$_o_s_8h.html#ace6ec4b7947542f7d7ff3104d8c759bd" title=" " alt="" coords="493,487,617,513"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="OS_Kill" name="OS_Kill">
+<area shape="rect" id="node1" title="This function kill/deletes current thread from schedule." alt="" coords="5,5,72,32"/>
+<area shape="rect" id="node2" href="$startup_8h.html#ac866dbaf7b167e5c46bb33de42eee84d" title="Disable Global Interrupts (ISR = 1)" alt="" coords="120,5,239,32"/>
+</map>

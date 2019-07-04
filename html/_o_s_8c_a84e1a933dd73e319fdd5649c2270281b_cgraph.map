@@ -1,0 +1,6 @@
+<map id="OS_MailBox_Init" name="OS_MailBox_Init">
+<area shape="rect" id="node1" title="Initializes communication channel for OS." alt="" coords="5,31,124,57"/>
+<area shape="rect" id="node2" href="$_o_s_8c.html#ae3a59ef7ce0ba07d23ab8c421c5b7f15" title="Initialize semaphore to given value." alt="" coords="172,31,303,57"/>
+<area shape="rect" id="node3" href="$startup_8h.html#a2bd85031589c754845b826ef8a50fe15" title="Start Criticat Sections, Disable Global Interrupts." alt="" coords="351,5,441,32"/>
+<area shape="rect" id="node4" href="$startup_8h.html#a334154d527e554c179f59f15789a9034" title="End of critical section (ISR = prev ISR) @parameter sr previously saved PSR." alt="" coords="353,56,439,83"/>
+</map>

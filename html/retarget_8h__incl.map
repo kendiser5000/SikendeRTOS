@@ -1,0 +1,9 @@
+<map id="SikendeRTOS/SikenderOS/Project/inc/retarget.h" name="SikendeRTOS/SikenderOS/Project/inc/retarget.h">
+<area shape="rect" id="node1" title="Redirects printf to UART." alt="" coords="5,5,184,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="19,95,80,121"/>
+<area shape="rect" id="node3" href="$_u_a_r_t0_8h.html" title=" " alt="" coords="104,95,179,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="107,393,173,420"/>
+<area shape="rect" id="node5" href="$_o_s_8h.html" title="Functions for OS." alt="" coords="155,169,207,196"/>
+<area shape="rect" id="node6" href="$_o_s_config_8h.html" title="Configuration setup for OS." alt="" coords="137,244,225,271"/>
+<area shape="rect" id="node7" href="$_r_t_o_s_2inc_2cpu__vars_8h.html" title=" " alt="" coords="139,319,223,345"/>
+</map>

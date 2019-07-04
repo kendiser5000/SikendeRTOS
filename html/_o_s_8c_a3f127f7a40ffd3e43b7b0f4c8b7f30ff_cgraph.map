@@ -1,0 +1,9 @@
+<map id="OS_bWait" name="OS_bWait">
+<area shape="rect" id="node1" title="This function implements binary wait." alt="" coords="5,56,88,83"/>
+<area shape="rect" id="node2" href="$startup_8h.html#ac866dbaf7b167e5c46bb33de42eee84d" title="Disable Global Interrupts (ISR = 1)" alt="" coords="136,5,255,32"/>
+<area shape="rect" id="node3" href="$_o_s_8c.html#aef10d0f111dd7005eb47910c2c539774" title="Add current TCB to blocked list then yield, ratatatat." alt="" coords="155,56,235,83"/>
+<area shape="rect" id="node7" href="$startup_8h.html#ab712356331a62b04aebcb373865e68c4" title="Enable Global Interrupts (ISR = 0)" alt="" coords="137,107,253,133"/>
+<area shape="rect" id="node4" href="$_o_s_8c.html#aad5d03b551650383d80786160b0c5e37" title="UnLinkTCB Remove thread form Doubly LL of TCB, copy pasta." alt="" coords="345,5,432,32"/>
+<area shape="rect" id="node5" href="$_o_s_8c.html#adf29cacb24e7fe15bc46811f994eaa57" title="Add TCB to blocked Linked list of semaphore." alt="" coords="303,56,475,83"/>
+<area shape="rect" id="node6" href="$_o_s_8c.html#a4e71587568a2a48931a35615cad1b5db" title="This function suspends current thread by forcing context switch call." alt="" coords="339,107,438,133"/>
+</map>
