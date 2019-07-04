@@ -1,5 +1,0 @@
-<map id="Timer0A_Init" name="Timer0A_Init">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,100,57"/>
-<area shape="rect" id="node2" href="$startup_8h.html#a2bd85031589c754845b826ef8a50fe15" title="Start Criticat Sections, Disable Global Interrupts." alt="" coords="148,5,239,32"/>
-<area shape="rect" id="node3" href="$startup_8h.html#a334154d527e554c179f59f15789a9034" title="End of critical section (ISR = prev ISR) @parameter sr previously saved PSR." alt="" coords="151,56,236,83"/>
-</map>
