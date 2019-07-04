@@ -1,6 +1,0 @@
-<map id="SikendeRTOS/SikenderOS/CMSIS/startup.h" name="SikendeRTOS/SikenderOS/CMSIS/startup.h">
-<area shape="rect" id="node1" title="Contains Enable/Disable Interrupts, Start/EndCritical from startup file Used to control global ISR fl..." alt="" coords="107,5,285,47"/>
-<area shape="rect" id="node2" href="$_f_i_f_o_8h.html" title="Provides Functions to initialize FIFO, uses index implementation and macro." alt="" coords="5,95,184,136"/>
-<area shape="rect" id="node4" href="$_o_s_8c.html" title="Contains functions to run OS." alt="" coords="208,95,387,136"/>
-<area shape="rect" id="node3" href="$_u_a_r_t0_8c.html" title=" " alt="" coords="5,184,184,225"/>
-</map>

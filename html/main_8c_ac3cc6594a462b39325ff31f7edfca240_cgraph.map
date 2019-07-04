@@ -1,7 +1,0 @@
-<map id="Flash_Blue" name="Flash_Blue">
-<area shape="rect" id="node1" title="Blink Blue LED." alt="" coords="5,56,92,83"/>
-<area shape="rect" id="node2" href="$_o_s_8h.html#ab7bbab8bf49ba8f7eb65fd428d035cb8" title="This function puts a thread to sleep." alt="" coords="140,56,221,83"/>
-<area shape="rect" id="node3" href="$startup_8h.html#ac866dbaf7b167e5c46bb33de42eee84d" title="Disable Global Interrupts (ISR = 1)" alt="" coords="281,5,400,32"/>
-<area shape="rect" id="node4" href="$_o_s_8c.html#a4e71587568a2a48931a35615cad1b5db" title="This function suspends current thread by forcing context switch call." alt="" coords="291,56,390,83"/>
-<area shape="rect" id="node5" href="$_o_s_8c.html#a20f49b8f1f94c048fafb8c21260105af" title=" " alt="" coords="269,107,412,133"/>
-</map>

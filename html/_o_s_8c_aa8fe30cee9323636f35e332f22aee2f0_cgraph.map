@@ -1,8 +1,0 @@
-<map id="SW1_Debounce" name="SW1_Debounce">
-<area shape="rect" id="node1" title="Debounce_SW1 debounce switch 1 with sleep, easier than timer maybe?" alt="" coords="5,31,121,57"/>
-<area shape="rect" id="node2" href="$_o_s_8c.html#aeeb2aca9e1a16738a5d82353b2d497ac" title=" " alt="" coords="169,56,251,83"/>
-<area shape="rect" id="node6" href="$_o_s_8c.html#a8e991f4f2576c5cfec04ef5f37aabea5" title=" " alt="" coords="177,5,243,32"/>
-<area shape="rect" id="node3" href="$startup_8h.html#ac866dbaf7b167e5c46bb33de42eee84d" title="Disable Global Interrupts (ISR = 1)" alt="" coords="311,5,429,32"/>
-<area shape="rect" id="node4" href="$_o_s_8c.html#a4e71587568a2a48931a35615cad1b5db" title=" " alt="" coords="321,56,419,83"/>
-<area shape="rect" id="node5" href="$_o_s_8c.html#a20f49b8f1f94c048fafb8c21260105af" title=" " alt="" coords="299,107,441,133"/>
-</map>

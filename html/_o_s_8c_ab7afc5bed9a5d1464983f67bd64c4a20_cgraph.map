@@ -1,5 +1,0 @@
-<map id="OS_Launch" name="OS_Launch">
-<area shape="rect" id="node1" title="This function starts the scheduler and enables interrupts." alt="" coords="5,31,96,57"/>
-<area shape="rect" id="node2" href="$_timer_8h.html#afc1771f901416eb77d0c6acf4052ef4a" title=" " alt="" coords="144,5,237,32"/>
-<area shape="rect" id="node3" href="$_o_s_8c.html#a58e71de216f017b56e969befbba3a046" title=" " alt="" coords="156,56,225,83"/>
-</map>

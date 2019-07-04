@@ -1,4 +1,0 @@
-<map id="Flash_Green" name="Flash_Green">
-<area shape="rect" id="node1" title="Blink Green LED." alt="" coords="5,5,101,32"/>
-<area shape="rect" id="node2" href="$_o_s_8h.html#a4e71587568a2a48931a35615cad1b5db" title="This function suspends current thread by forcing context switch call." alt="" coords="149,5,248,32"/>
-</map>

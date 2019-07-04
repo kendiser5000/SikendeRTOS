@@ -1,5 +1,0 @@
-<map id="Flash_Red2" name="Flash_Red2">
-<area shape="rect" id="node1" title="Blink Red LED." alt="" coords="5,31,96,57"/>
-<area shape="rect" id="node2" href="$_o_s_8h.html#af6e627ead72fd74925e9fb1307ed2542" title="Spinlock semaphore wait using ARM exclusion." alt="" coords="149,5,259,32"/>
-<area shape="rect" id="node3" href="$_o_s_8h.html#afa138310e41aca278f05cdd4fe7cc769" title="Spinlock semaphore signal using ARM exclusion." alt="" coords="144,56,264,83"/>
-</map>

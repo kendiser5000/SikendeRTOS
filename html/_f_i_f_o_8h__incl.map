@@ -1,6 +1,0 @@
-<map id="SikendeRTOS/SikenderOS/Project/inc/FIFO.h" name="SikendeRTOS/SikenderOS/Project/inc/FIFO.h">
-<area shape="rect" id="node1" title="Provides Functions to initialize FIFO, uses index implementation and macro." alt="" coords="5,5,184,47"/>
-<area shape="rect" id="node2" href="$startup_8h.html" title="Contains Enable/Disable Interrupts, Start/EndCritical from startup file Used to control global ISR fl..." alt="" coords="7,95,81,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="105,95,189,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="17,169,71,196"/>
-</map>

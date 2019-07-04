@@ -1,4 +1,0 @@
-<map id="OS_ASM_Signal" name="OS_ASM_Signal">
-<area shape="rect" id="node1" title="Spinlock semaphore signal using ARM exclusion." alt="" coords="144,5,264,32"/>
-<area shape="rect" id="node2" href="$main_8c.html#a75a35bc3bba0a74dc1729ee777c31eaa" title="Blink Red LED." alt="" coords="5,5,96,32"/>
-</map>
