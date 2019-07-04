@@ -1,0 +1,8 @@
+<map id="OS_bSignal" name="OS_bSignal">
+<area shape="rect" id="node1" title="Signal semaphore to be free, set to 1." alt="" coords="5,56,96,83"/>
+<area shape="rect" id="node2" href="$startup_8h.html#a2bd85031589c754845b826ef8a50fe15" title="Start Criticat Sections, Disable Global Interrupts." alt="" coords="147,5,237,32"/>
+<area shape="rect" id="node3" href="$_o_s_8c.html#a69239e16573b1731d861d1bf8223b2ca" title="Remove TCB from blocked list." alt="" coords="144,56,240,83"/>
+<area shape="rect" id="node6" href="$startup_8h.html#a334154d527e554c179f59f15789a9034" title="End of critical section (ISR = prev ISR) @parameter sr previously saved PSR." alt="" coords="149,107,235,133"/>
+<area shape="rect" id="node4" href="$_o_s_8c.html#a53eb4d4d5ecbbfd138aebebda1ec9ed1" title="Remove TCB from blocked list, assuiming thread already blocked, else rip program." alt="" coords="288,31,499,57"/>
+<area shape="rect" id="node5" href="$_o_s_8c.html#a73955a19ff51ef9c72cbdca13afbaf01" title="LinkTCB Add TCB to doubly Linked List, copy pasta ee 312." alt="" coords="358,81,429,108"/>
+</map>

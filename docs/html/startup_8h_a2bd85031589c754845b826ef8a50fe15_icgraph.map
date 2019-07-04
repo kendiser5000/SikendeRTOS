@@ -1,0 +1,8 @@
+<map id="StartCritical" name="StartCritical">
+<area shape="rect" id="node1" title="Start Criticat Sections, Disable Global Interrupts." alt="" coords="184,107,275,133"/>
+<area shape="rect" id="node2" href="$_o_s_8c.html#ae3a59ef7ce0ba07d23ab8c421c5b7f15" title="Initialize semaphore to given value." alt="" coords="5,5,136,32"/>
+<area shape="rect" id="node3" href="$_o_s_8c.html#aad29612829941c857ed685f40e193cd0" title="semaphore value decrement" alt="" coords="33,56,108,83"/>
+<area shape="rect" id="node4" href="$_o_s_8c.html#a0c4d587c411a23652529110910261fde" title="This function(Spinlock) will signal that a mutual exclusion is taking place in a function." alt="" coords="29,107,113,133"/>
+<area shape="rect" id="node5" href="$_o_s_8c.html#aacf0c377b570fc63b103c57e0fbc7acd" title="This function implements binary signal." alt="" coords="25,157,116,184"/>
+<area shape="rect" id="node6" href="$_o_s_8c.html#a855e812323d2d65c75c8c59f0c056961" title=" " alt="" coords="24,208,117,235"/>
+</map>

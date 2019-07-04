@@ -1,0 +1,9 @@
+<map id="Peripheral_Init" name="Peripheral_Init">
+<area shape="rect" id="node1" title="This function initializes extra IO used by OS, add new inits here." alt="" coords="5,81,109,108"/>
+<area shape="rect" id="node2" href="$_timer_8h.html#a1f9f3c8e9e768dee252af6e09ebf3129" title=" " alt="" coords="193,5,287,32"/>
+<area shape="rect" id="node5" href="$_o_s_8c.html#a2f33edf295f53211431ba65dd102707c" title="Update Sleep timer and run through linked list and remove any sleeping threads." alt="" coords="177,107,303,133"/>
+<area shape="rect" id="node6" href="$_timer_8h.html#aae3647c92f6dde0904217bcc18cc2c0b" title=" " alt="" coords="193,56,287,83"/>
+<area shape="rect" id="node7" href="$_o_s_8c.html#a0b0cc98c38e9abad9e2ac701be5e8706" title=" " alt="" coords="157,157,323,184"/>
+<area shape="rect" id="node3" href="$_timer_8c.html#a98fbe9833188539e49482a97b3f9a99c" title=" " alt="" coords="371,5,461,32"/>
+<area shape="rect" id="node4" href="$_timer_8c.html#ab951a617be3009367cd2abdb523990f6" title=" " alt="" coords="373,56,459,83"/>
+</map>
