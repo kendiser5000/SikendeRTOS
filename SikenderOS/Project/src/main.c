@@ -120,7 +120,7 @@ int main(void)
 		ThreadsCreated++;
 	
 	// create initial foreground threads
-	if(OS_AddThread(&Flash_Green, 1))
+	if(OS_AddThread(&Flash_Green, 2))
 		ThreadsCreated++;
 	
 	// create initial foreground threads

@@ -129,9 +129,7 @@ void SetInitialStack(INT32U i){
 void SetThreads(void){
 	for (INT8 i = 0; i < NUMTHREADS; i++){
 		tcbs[i].status = -1;
-		//tcbs[i].sema4Blocked = 0;
 		tcbs[i].id = -1;
-		//tcbs[i].priority = 0x00;
 		tcbs[i].sleepState = 0;
 	}
 	for (INT8 i = 0; i < PRIORITYLEVELS; i++){
@@ -145,7 +143,6 @@ void SetThreads(void){
  *  @return none
 */
 void OS_SleepHandler(void){
-	TIMER3_ICR_R = TIMER_ICR_TATOCINT;// acknowledge TIMER3A timeout
 	// increment timer for sleep
 	OS_SystemTimeMS++;
 	
@@ -362,7 +359,6 @@ void SysTick_Handler(void){
 
 /** OS_Suspend
 * @brief This function suspends current thread by forcing context switch call
-
 * 
 */
 void OS_Suspend(void)
@@ -411,7 +407,6 @@ void OS_AddPriorityThread(tcbType* newThread){
 * @param stackSize
 * @param priority
 * @return 1-success, 0-fail
-
 * 
 */
 INT8 OS_AddThread(void(*task)(void), INT32U priority){
@@ -570,7 +565,7 @@ void OS_bSignal(Sema4Type *semaPt){
 * 
 */
 void OS_Sleep(INT32U sleepTime){
-	DisableInterrupts();
+	OS_DisableInterrupts();
 	// add current thread to sleep list like in class
 	RunPt->sleepState = sleepTime;
 	// Priroity Scheduling
@@ -603,8 +598,8 @@ void OS_Kill(void){
 		curPtr = PriorityPtr[RunPt->priority];
 		// dp searjc
 		while (curPtr != RunPt){
-			tmpPtr = curPtr; //
-			curPtr = curPtr->nextPriority; //
+			tmpPtr = curPtr; 
+			curPtr = curPtr->nextPriority; 
 		}
 		// check to see if last link in list
 		if (RunPt == PriorityLastPtr[RunPt->priority]){ 

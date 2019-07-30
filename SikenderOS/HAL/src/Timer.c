@@ -33,6 +33,8 @@ void SysTick_Init(uint32_t period){
 	NVIC_ST_CURRENT_R = 0;      // any write to current clears it
 	NVIC_SYS_PRI3_R =(NVIC_SYS_PRI3_R&0x00FFFFFF)|0xD0000000; // priority 6
 	NVIC_SYS_PRI3_R =(NVIC_SYS_PRI3_R&0xFF00FFFF)|0x00E00000; // priority 7
+	NVIC_ST_RELOAD_R = period - 1; // reload value
+	NVIC_ST_CTRL_R = 0x00000007; // enable, core clock and interrupt arm
 }
 
 void Timer0A_Init(void (*task)(void), uint32_t period, uint32_t priority){
