@@ -3,13 +3,11 @@
 * @brief Contains functions to run OS
 * 
 */
-
 #include "cpu.h"
 #include "startup.h"
 #include "Timer.h"
 #include "Switch.h"
 #include "OS.h"
-
 
 
 // OS ASM functions
@@ -21,24 +19,27 @@ void OS_DisableInterrupts(void);
 /*! @var INT32U Stacks
     @brief Contains all the stacks for each thread
 */
-INT32U Stacks[NUMTHREADS][STACKSIZE];
-
+static INT32U Stacks[NUMTHREADS][STACKSIZE];
 
 /*! @var INT8U numOfThreads
     @brief number of threads running
 */
 static INT32U NumOfThreads = 0;
 
-
 /*! @var uint32_T OS_SystemTime
     @brief time OS has been running in ms
 */
-INT64U OS_SystemTime = 0;
+static INT64U OS_SystemTime = 0;
 
 /*! @var uint32_T OS_SystemTimeMS
     @brief time OS has been running in ms
 */
-INT64U OS_SystemTimeMS;
+static INT64U OS_SystemTimeMS;
+
+/*! @var MailBoxType MailBox
+	@brief mailbox variable defined for OS mailbox
+*/
+static MailBoxType MailBox;
 
 
 /** @var Thread Control Block
@@ -77,10 +78,9 @@ tcbType *NextRunPt;
 /*! @var FIFO_t OS_FIFO
     @brief Contains next thread to run
 */
-FIFO_t OS_FIFO[FIFO_SIZE];
-INT32U Get_Idx = 0, Put_Idx = 0;
-Sema4Type SemaFIFO;
-
+static FIFO_t OS_FIFO[FIFO_SIZE];
+static INT32U Get_Idx = 0, Put_Idx = 0;
+static Sema4Type SemaFIFO;
 
 //************* PRIORITY SCHEDULING GLOBALS AND ARRAYS**************************************************************************
 //Value > 0, else 0 if empty, change upon OS_Kill, Total number of threads in priority level
@@ -92,8 +92,6 @@ tcbType* PriorityPtr[PRIORITYLEVELS] 		= {0};
 // Pointer to end of LL
 tcbType* PriorityLastPtr[PRIORITYLEVELS] 	= {0};
 
-
-
 //*********************************************** Basic OS Initilization Functions ********************
 //*********************************************** Add CPU/Peripheral Functions to these if desired ********************
 
@@ -102,7 +100,7 @@ tcbType* PriorityLastPtr[PRIORITYLEVELS] 	= {0};
  * @param i tcb thread number
  * 
 */
-void SetInitialStack(INT32U i){
+static void SetInitialStack(INT32U i){
   tcbs[i].sp = &Stacks[i][STACKSIZE-16]; // thread stack pointer
   Stacks[i][STACKSIZE-1] = 0x01000000;   // thumb bit
   Stacks[i][STACKSIZE-3] = 0x14141414;   // R14
@@ -121,12 +119,11 @@ void SetInitialStack(INT32U i){
   Stacks[i][STACKSIZE-16] = 0x04040404;  // R4
 }
 
-
 /** SetThreads
 * @brief Set Threads to default values for unused.
 * 
 */
-void SetThreads(void){
+static void SetThreads(void){
 	for (INT8 i = 0; i < NUMTHREADS; i++){
 		tcbs[i].status = -1;
 		tcbs[i].id = -1;
@@ -137,12 +134,11 @@ void SetThreads(void){
 	}
 }
 	
-
 /** OS_SleepHandler
  * @brief Update Sleep timer and run through linked list and remove any sleeping threads
  *  @return none
 */
-void OS_SleepHandler(void){
+static void OS_SleepHandler(void){
 	// increment timer for sleep
 	OS_SystemTimeMS++;
 	
@@ -176,7 +172,6 @@ void Peripheral_Init(void){
 
 }
 
-
 /** OS_SystemtPriority
  *	@brief Set priority of Systick and PendSV (Context Switch handlers)
 */
@@ -185,6 +180,7 @@ void OS_SystemPriority(void){
 	NVIC_SYS_PRI3_R =(NVIC_SYS_PRI3_R&0xFF00FFFF)|0x00E00000; // priority 7
 
 }
+
 /** OS_Init
  *	@brief initialize operating system, disable interrupts until OS_Launch
  *	initialize OS controlled I/O: serial, ADC, systick, LaunchPad I/O and timers 
@@ -198,9 +194,6 @@ void OS_Init(void){
 	OS_SystemPriority();
 	RunPt = &tcbs[0]; 
 }
-
-
-
 
 /** @brief  LinkTCB
  *	Add TCB to doubly Linked List, copy pasta ee 312
@@ -219,7 +212,6 @@ void LinkTCB(tcbType* newThread){
 	NumOfThreads++;
 }
 
-
 /** @brief  UnLinkTCB
  *	Remove thread form Doubly LL of TCB, copy pasta 
 */
@@ -229,8 +221,6 @@ void UnLinkTCB(void){
 	RunPt->next->prev = RunPt->prev;
 	NumOfThreads--;
 }
-
-
 
 /** AddBlockedToSema4
  *	@brief Add TCB to blocked Linked list of semaphore
@@ -252,9 +242,6 @@ void AddBlockedToSemaphore(Sema4Type* semaPt){
 	}
 }
 
-
-
-
 /** RemoveBlockedFromSemaphore
  *	@brief Remove TCB from blocked list, assuiming thread already blocked, else rip program
  *  @param semaPt ptr to semaphore
@@ -267,7 +254,6 @@ tcbType* RemoveBlockedFromSemaphore(Sema4Type* semaPt){
 	return headLink;
 }
 
-
 /** UnBlockTCB
  *	@brief Remove TCB from blocked list
  *  @param semaPt ptr to semaphore
@@ -277,8 +263,6 @@ void UnBlockTCB(Sema4Type* semaPt){
 	LinkTCB(blocked);
 	blocked->sema4Blocked = 0;
 }
-
-
 
 /** BlockTCB
  *	@brief Add current TCB to blocked list then yield, ratatatat
@@ -291,7 +275,6 @@ void BlockTCB(Sema4Type* semaPt){
 	AddBlockedToSemaphore(semaPt);
 	OS_Suspend();
 }
-
 
 /** OS_Launch
 * @brief This function starts the scheduler and enables interrupts
@@ -322,9 +305,7 @@ void OS_Scheduler(void){
 		if (PriorityAvailable[pri] > 0)
 			break;
 	}
-	
-	// ERROR
-	
+
 	// check if next priority thread is the same priority
 	if (pri == RunPt->priority){	
 		NextRunPt = RunPt->nextPriority;
@@ -345,9 +326,8 @@ void OS_Scheduler(void){
 	
 }
 
-
 /** SysTick_Handler
- * @brief This function decides next thread to run, 
+ * @brief This function decides next thread to run
 **/
 void SysTick_Handler(void){
 	OS_Scheduler();
@@ -355,7 +335,6 @@ void SysTick_Handler(void){
 	NVIC_INT_CTRL_R = NVIC_INT_CTRL_PEND_SV; // go to context switch
 	//PE1 ^= 0x02;
 }
-
 
 /** OS_Suspend
 * @brief This function suspends current thread by forcing context switch call
@@ -368,9 +347,6 @@ void OS_Suspend(void)
 	NVIC_ST_CURRENT_R = 0;      // clear timer
 	NVIC_INT_CTRL_R = 0x04000000; // go to SysTick Handler
 }
-
-
-
 
 /** OS_AddThread
 * @brief This function decides next thread to run, now uses priority scheduler
@@ -398,8 +374,6 @@ void OS_AddPriorityThread(tcbType* newThread){
 	PriorityTotal[pri]++;
 	
 }
-
-
 
 /** OS_AddThread
 * @brief This function decides next thread to run, now uses priority scheduler
@@ -467,8 +441,6 @@ INT8 OS_AddThread(void(*task)(void), INT32U priority){
 	return 1;
 }
 
-
-
 /** OS_IdThread
  *  @brief Get current thread ID
  *  @return id of thread
@@ -476,7 +448,6 @@ INT8 OS_AddThread(void(*task)(void), INT32U priority){
 INT32U OS_IdThread(void){
 	return RunPt->id;
 }
-
 
 /** OS_InitSemaphore
  *  @brief Initialize semaphore to given value
@@ -488,8 +459,6 @@ void OS_InitSemaphore(Sema4Type *semaPt, INT32 value){	//Occurs once at the star
 	semaPt->blockThreads = 0;
 	EndCritical(sr);
 }
-
-
 
 /** OS_Wait
  *  @brief semaphore value decrement
@@ -507,8 +476,6 @@ void OS_Wait(Sema4Type *semaPt){ // Called at run time to provide synchronizatio
 	
 }
 
-
-
 /** OS_Signal
  * @brief This function(Spinlock) will signal that a mutual exclusion is taking place in a function
  * @param semaPt 
@@ -522,8 +489,6 @@ void OS_Signal(Sema4Type *semaPt){
 	}
 	EndCritical(sr);
 }
-
-
 
 /** OS_bWait
 * @brief This function implements binary wait
@@ -541,11 +506,9 @@ void OS_bWait(Sema4Type *semaPt){
 
 }
 
-
 /** OS_bSignal
 * @brief This function implements binary signal
 * @param semaPt semaphore passed in
-
 * 
 */
 void OS_bSignal(Sema4Type *semaPt){
@@ -557,11 +520,9 @@ void OS_bSignal(Sema4Type *semaPt){
 	EndCritical(sr);
 }
 
-
 /** OS_Sleep
 * @brief This function puts a thread to sleep
 * @param sleepTime time to put thread to sleep
-
 * 
 */
 void OS_Sleep(INT32U sleepTime){
@@ -574,7 +535,6 @@ void OS_Sleep(INT32U sleepTime){
 	OS_Suspend();
 	OS_EnableInterrupts();
 }
-
 
 /** OS_Kill
 * @brief This function kill/deletes current thread from schedule
@@ -622,7 +582,6 @@ void OS_Kill(void){
 	while(1) errorVar++;
 }
 
-
 /** OS_AddPeriodicThread
  * @brief Adds periodic background thread. Cannot spin, sleep, die, rest, etc. cause it's ISR, depends on hardware for number of tasks possible
 			No ID for this thread, must have mid-high priority to run properly
@@ -658,20 +617,16 @@ INT8 OS_AddPeriodicThread(void(*task)(void), INT32U period, INT32U priority){
 	return 1;
 }
 
-
-
 /** OS_AddSW1Task
 * @brief This function adds a thread to run and its priority when a button is pressed
 * @param task function/thread to run when button pressed
 * @param priority
 * @return success or fail 
 */
-
 INT8 OS_AddSW1Task(void(*task)(void), INT32U priority){
 	SW1_Init(task, priority);
 	return 1;	
 }
-
 
 /** OS_AddSW2Task
 * @brief This function adds a thread to run and its priority when a button is pressed
@@ -685,7 +640,6 @@ INT8 OS_AddSW2Task(void(*task)(void), INT32U priority){
 	return 1;	
 }
 
-
 /** OS_Fifo_Init
 * Initializes Fifo to be empty, ignored for lab 2, divisible by 2
 */
@@ -696,12 +650,10 @@ void OS_Fifo_Init(void){
 	EndCritical(sr);
 }
 
-
 /** OS_Fifo_Put
 * Adds data to FiFo
 * @param data
 * @return success - 1, Fail - 0
-
 * 
 */
 INT8 OS_Fifo_Put(FIFO_t data){
@@ -716,8 +668,6 @@ INT8 OS_Fifo_Put(FIFO_t data){
 	OS_Signal(&SemaFIFO);
 	return 1;
 } 
-
-
 
 /** OS_Fifo_Get
 * Retrieves data from OS Fifo
@@ -734,7 +684,6 @@ FIFO_t OS_Fifo_Get(void){
 	return data;
 }
 
-
 /** OS_Fifo_Size
 * @brief Gets current size of FiFo
 * @return size of current FIFO buffer
@@ -746,8 +695,6 @@ INT32U OS_Fifo_Size(void){
 	return size;
 }
 
-MailBoxType MailBox;
-
 /** OS_MailBox_Init
 * @brief Initializes communication channel for OS
 */
@@ -757,7 +704,6 @@ void OS_MailBox_Init(void){
 	OS_InitSemaphore(&MailBox.Empty, 1); //FML i set this wrong 4AM
 	OS_InitSemaphore(&MailBox.Full,  0);
 }
-
 
 /** OS_MailBox_Send
 * Enter mail into the Mailbox
@@ -773,8 +719,6 @@ void OS_MailBox_Send(INT32U data){
 	OS_bSignal(&MailBox.Full);
 }
 
-
-
 /** OS_MailBox_Recv
 * Remove mail from the mailbox
 * @brief This function will be called from a foreground thread
@@ -789,16 +733,13 @@ INT32U OS_MailBox_Recv(void){
 	OS_bSignal(&MailBox.Empty);
 	return data;
 }
-
-
  
 /** OS_Time
- *  @return OS time in 12.5ns
+ *  @return OS time in 1/BUS_CLK increments
 */
 INT32U OS_Time(void){
 	return TIMER0_TAR_R;
 }
-
 
 /**OS_TimeDifference
  * @param start
@@ -813,15 +754,12 @@ INT32U OS_TimeDifference(INT32U start, INT32U stop){
 	}
 }
 
-
 /** OS_ClearMsTime
  *  Clear ms time
 */
 void OS_ClearMsTime(void){
 	OS_SystemTimeMS  = 0;
 }
-
-
 
 /**OS_MsTime
  *  @return time in ms
