@@ -31,7 +31,7 @@
 /** PRIORITYLEVELS
  * @brief number of priorities
 */
-#define PRIORITYLEVELS 8       // 0-7, follows ARM interrupt protocol
+#define PRIORITYLEVELS 8       // 0-7, priority follows ARM interrupt protocol
 
 /**
  * OS FIFO SIZE
