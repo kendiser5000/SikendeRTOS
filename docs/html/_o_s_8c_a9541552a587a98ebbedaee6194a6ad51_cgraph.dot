@@ -1,0 +1,34 @@
+digraph "OS_MailBox_Recv"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="OS_MailBox_Recv",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This function will be called from a foreground thread It will spin/block if the MailBox is empty."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="OS_bSignal",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_8c.html#aacf0c377b570fc63b103c57e0fbc7acd",tooltip="This function implements binary signal."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="EndCritical",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$startup_8h.html#a334154d527e554c179f59f15789a9034",tooltip="End of critical section (ISR = prev ISR) @parameter sr previously saved PSR."];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="StartCritical",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$startup_8h.html#a2bd85031589c754845b826ef8a50fe15",tooltip="Start Criticat Sections, Disable Global Interrupts."];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="UnBlockTCB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_8c.html#a69239e16573b1731d861d1bf8223b2ca",tooltip="Remove TCB from blocked list."];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="LinkTCB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_8c.html#a73955a19ff51ef9c72cbdca13afbaf01",tooltip="LinkTCB Add TCB to doubly Linked List, copy pasta ee 312."];
+  Node5 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="RemoveBlockedFromSemaphore",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_8c.html#afc402897fb2fb0bf0cc3e51039fa0963",tooltip="Remove TCB from blocked list, assuiming thread already blocked, else rip program."];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="OS_bWait",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_8c.html#a3f127f7a40ffd3e43b7b0f4c8b7f30ff",tooltip="This function implements binary wait."];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="BlockTCB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_8c.html#aef10d0f111dd7005eb47910c2c539774",tooltip="Add current TCB to blocked list then yield, ratatatat."];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="AddBlockedToSemaphore",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_8c.html#adf29cacb24e7fe15bc46811f994eaa57",tooltip="Add TCB to blocked Linked list of semaphore."];
+  Node9 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="OS_Suspend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_8c.html#a4e71587568a2a48931a35615cad1b5db",tooltip="This function suspends current thread by forcing context switch call."];
+  Node9 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="UnLinkTCB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_8c.html#aad5d03b551650383d80786160b0c5e37",tooltip="UnLinkTCB Remove thread form Doubly LL of TCB, copy pasta."];
+  Node8 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="DisableInterrupts",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$startup_8h.html#ac866dbaf7b167e5c46bb33de42eee84d",tooltip="Disable Global Interrupts (ISR = 1)"];
+  Node8 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="EnableInterrupts",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$startup_8h.html#ab712356331a62b04aebcb373865e68c4",tooltip="Enable Global Interrupts (ISR = 0)"];
+}

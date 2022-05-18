@@ -1,0 +1,16 @@
+digraph "OS_bSignal"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="OS_bSignal",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Signal semaphore to be free, set to 1."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Flash_Red",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#ade46a52d93916aa7a15231c916ffd861",tooltip="Blink Red LED."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe",tooltip="Example usecase of RTOS."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="OS_MailBox_Recv",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_8c.html#a9541552a587a98ebbedaee6194a6ad51",tooltip="This function will be called from a foreground thread It will spin/block if the MailBox is empty."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="OS_MailBox_Send",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_8c.html#a8efdc42dfa1a86aba6760dd049672a02",tooltip="This function will be called from a foreground thread It will spin/block if the MailBox contains data..."];
+}

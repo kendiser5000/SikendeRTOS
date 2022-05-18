@@ -1,0 +1,16 @@
+digraph "commandOS"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="commandOS",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="executeCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_interpreter_8c.html#a9114c4f99de7fb28b6e220b582ff86af",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Interpreter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_interpreter_8c.html#a2e36aaea6b9cab2ca1faab2c2d760271",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="WrapInterpreter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#ab066947609cc9d6ec3722648f8882936",tooltip="Run interpreter using UART0 (in USB debugger)"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe",tooltip="Example usecase of RTOS."];
+}

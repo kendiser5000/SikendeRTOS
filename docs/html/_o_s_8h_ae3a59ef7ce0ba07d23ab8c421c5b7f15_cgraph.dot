@@ -1,0 +1,12 @@
+digraph "OS_InitSemaphore"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="OS_InitSemaphore",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Initialize semaphore to given value."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="EndCritical",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$startup_8h.html#a334154d527e554c179f59f15789a9034",tooltip="End of critical section (ISR = prev ISR) @parameter sr previously saved PSR."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="StartCritical",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$startup_8h.html#a2bd85031589c754845b826ef8a50fe15",tooltip="Start Criticat Sections, Disable Global Interrupts."];
+}

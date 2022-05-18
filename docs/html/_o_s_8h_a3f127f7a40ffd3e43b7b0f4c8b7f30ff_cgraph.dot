@@ -1,0 +1,20 @@
+digraph "OS_bWait"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="OS_bWait",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Wait on semaphore, binary."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="BlockTCB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_8c.html#aef10d0f111dd7005eb47910c2c539774",tooltip="Add current TCB to blocked list then yield, ratatatat."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AddBlockedToSemaphore",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_8c.html#adf29cacb24e7fe15bc46811f994eaa57",tooltip="Add TCB to blocked Linked list of semaphore."];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="OS_Suspend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_8c.html#a4e71587568a2a48931a35615cad1b5db",tooltip="This function suspends current thread by forcing context switch call."];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="UnLinkTCB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_8c.html#aad5d03b551650383d80786160b0c5e37",tooltip="UnLinkTCB Remove thread form Doubly LL of TCB, copy pasta."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="DisableInterrupts",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$startup_8h.html#ac866dbaf7b167e5c46bb33de42eee84d",tooltip="Disable Global Interrupts (ISR = 1)"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="EnableInterrupts",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$startup_8h.html#ab712356331a62b04aebcb373865e68c4",tooltip="Enable Global Interrupts (ISR = 0)"];
+}

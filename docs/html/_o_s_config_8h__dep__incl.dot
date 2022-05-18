@@ -1,0 +1,27 @@
+digraph "SikendeRTOS/SikenderOS/RTOS/inc/OSConfig.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="SikendeRTOS/SikenderOS\l/RTOS/inc/OSConfig.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Configuration setup for OS."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="SikendeRTOS/SikenderOS\l/RTOS/inc/OS.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_8h.html",tooltip="Functions for OS."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="SikendeRTOS/SikenderOS\l/HAL/inc/UART0.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_u_a_r_t0_8h.html",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="SikendeRTOS/SikenderOS\l/HAL/src/UART0.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_u_a_r_t0_8c.html",tooltip=" "];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="SikendeRTOS/SikenderOS\l/Project/inc/retarget.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$retarget_8h.html",tooltip="Redirects printf to UART."];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="SikendeRTOS/SikenderOS\l/Project/src/retarget.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$retarget_8c.html",tooltip=" "];
+  Node3 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="SikendeRTOS/SikenderOS\l/Project/src/Interpreter.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_interpreter_8c.html",tooltip="Runs on TM4C123 UART Command Line Interface."];
+  Node3 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="SikendeRTOS/SikenderOS\l/Project/src/main.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html",tooltip="Example program using SikendeRTOS features."];
+  Node2 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="SikendeRTOS/SikenderOS\l/HAL/src/Switch.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_switch_8c.html",tooltip="Board Switch setup for TM4c123."];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="SikendeRTOS/SikenderOS\l/RTOS/src/OS.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_8c.html",tooltip="Contains functions to run OS."];
+}

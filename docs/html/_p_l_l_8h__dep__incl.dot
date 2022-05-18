@@ -1,0 +1,13 @@
+digraph "SikendeRTOS/SikenderOS/HAL/inc/PLL.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="SikendeRTOS/SikenderOS\l/HAL/inc/PLL.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Sets Clock Speed."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="SikendeRTOS/SikenderOS\l/HAL/inc/cpu.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_h_a_l_2inc_2cpu_8h.html",tooltip="Contains CPU Initialization and Register functions/definitions."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="SikendeRTOS/SikenderOS\l/HAL/src/PLL.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_p_l_l_8c.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="SikendeRTOS/SikenderOS\l/RTOS/inc/cpu.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_r_t_o_s_2inc_2cpu_8h.html",tooltip="Contains CPU Initialization and Register functions/definitions."];
+}

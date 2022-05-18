@@ -1,0 +1,12 @@
+digraph "Timer1A_Init"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Timer1A_Init",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="EndCritical",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_timer_8c.html#ab951a617be3009367cd2abdb523990f6",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="StartCritical",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_timer_8c.html#a98fbe9833188539e49482a97b3f9a99c",tooltip=" "];
+}

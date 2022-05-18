@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['next',['next',['../struct_tcb.html#a0c3c6821f14f462e343533790f689ac4',1,'Tcb']]],
-  ['nextblocked',['nextBlocked',['../struct_tcb.html#a361c34e1521d2b3fe09d94ef2f66c2cd',1,'Tcb']]],
-  ['nextpriority',['nextPriority',['../struct_tcb.html#a3f43a7430598cb52ef244106e2b44b65',1,'Tcb']]],
-  ['nextrunpt',['NextRunPt',['../_o_s_8c.html#a70df142a8e38c657112e81a6db07ee7f',1,'OS.c']]]
+  ['prev_0',['prev',['../struct_tcb.html#a7367e2fc7516446e51f4968bdec892f2',1,'Tcb']]],
+  ['priority_1',['priority',['../struct_tcb.html#a6c96ac33e84a1675226aa3875c17e39e',1,'Tcb']]],
+  ['priorityavailable_2',['PriorityAvailable',['../_o_s_8c.html#a772ce532e022cb8615a8f23c782ab772',1,'OS.c']]],
+  ['prioritylastptr_3',['PriorityLastPtr',['../_o_s_8c.html#a73130baee1eeb87af54b774cf914a928',1,'OS.c']]],
+  ['priorityptr_4',['PriorityPtr',['../_o_s_8c.html#a6e8a564e6cdb685be441157425682f6b',1,'OS.c']]],
+  ['prioritytotal_5',['PriorityTotal',['../_o_s_8c.html#a321089696d554075c6a24a0782a85f68',1,'OS.c']]]
 ];

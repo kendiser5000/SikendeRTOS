@@ -1,0 +1,17 @@
+digraph "SikendeRTOS/SikenderOS/RTOS/src"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_16270a37b5a8f4621cd86db794000964 {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", style="filled,dashed,", label="RTOS", fontname="Helvetica", fontsize="10", URL="dir_16270a37b5a8f4621cd86db794000964.html"]
+  dir_59d67db9532aa945f65fee334bfa7fab [shape=box, label="inc", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_59d67db9532aa945f65fee334bfa7fab.html"];
+  dir_54e55b7943f5a8fb5108eaed4e0c5c86 [shape=box, label="src", style="filled,bold,", fillcolor="#edf0f7", color="grey25", URL="dir_54e55b7943f5a8fb5108eaed4e0c5c86.html"];
+  }
+  dir_213d4a3950a82888692d05f6250aeb40 [shape=box, label="HAL", style="dashed,", fillcolor="#edf0f7", color="red", URL="dir_213d4a3950a82888692d05f6250aeb40.html"];
+  dir_3aba866b171e250b385759d7fc4caca9 [shape=box, label="CMSIS", style="", fillcolor="#edf0f7", color="grey50", URL="dir_3aba866b171e250b385759d7fc4caca9.html"];
+  dir_54e55b7943f5a8fb5108eaed4e0c5c86->dir_213d4a3950a82888692d05f6250aeb40 [headlabel="2", labeldistance=1.5 headhref="dir_000011_000001.html"];
+  dir_54e55b7943f5a8fb5108eaed4e0c5c86->dir_3aba866b171e250b385759d7fc4caca9 [headlabel="1", labeldistance=1.5 headhref="dir_000011_000000.html"];
+  dir_54e55b7943f5a8fb5108eaed4e0c5c86->dir_59d67db9532aa945f65fee334bfa7fab [headlabel="1", labeldistance=1.5 headhref="dir_000011_000004.html"];
+}

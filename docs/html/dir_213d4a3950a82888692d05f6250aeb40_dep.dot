@@ -1,0 +1,22 @@
+digraph "SikendeRTOS/SikenderOS/HAL"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_a4458d604b8c2e629a88b058174e2b3f {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", style="filled,dashed,", label="SikenderOS", fontname="Helvetica", fontsize="10", URL="dir_a4458d604b8c2e629a88b058174e2b3f.html"]
+  dir_16270a37b5a8f4621cd86db794000964 [shape=box, label="RTOS", style="filled,", fillcolor="#a2b4d6", color="red", URL="dir_16270a37b5a8f4621cd86db794000964.html"];
+  dir_5d5c42069b943ca84469524c04f639fb [shape=box, label="Project", style="filled,", fillcolor="#a2b4d6", color="red", URL="dir_5d5c42069b943ca84469524c04f639fb.html"];
+  subgraph clusterdir_213d4a3950a82888692d05f6250aeb40 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", style="filled,bold,", label="", fontname="Helvetica", fontsize="10", URL="dir_213d4a3950a82888692d05f6250aeb40.html"]
+    dir_213d4a3950a82888692d05f6250aeb40 [shape=plaintext, label="HAL"];
+  dir_da61724cd14fbfa1bffbe9c70d427fa6 [shape=box, label="inc", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_da61724cd14fbfa1bffbe9c70d427fa6.html"];
+  dir_09cf9b32ae8c27fde1dee41336f46861 [shape=box, label="src", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_09cf9b32ae8c27fde1dee41336f46861.html"];
+  }
+  }
+  dir_da61724cd14fbfa1bffbe9c70d427fa6->dir_16270a37b5a8f4621cd86db794000964 [headlabel="1", labeldistance=1.5 headhref="dir_000002_000006.html"];
+  dir_09cf9b32ae8c27fde1dee41336f46861->dir_16270a37b5a8f4621cd86db794000964 [headlabel="1", labeldistance=1.5 headhref="dir_000009_000006.html"];
+  dir_09cf9b32ae8c27fde1dee41336f46861->dir_5d5c42069b943ca84469524c04f639fb [headlabel="1", labeldistance=1.5 headhref="dir_000009_000005.html"];
+  dir_09cf9b32ae8c27fde1dee41336f46861->dir_da61724cd14fbfa1bffbe9c70d427fa6 [headlabel="8", labeldistance=1.5 headhref="dir_000009_000002.html"];
+}

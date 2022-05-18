@@ -1,0 +1,12 @@
+digraph "OS_Launch"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="OS_Launch",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This function starts the scheduler and enables interrupts."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="StartOS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_8c.html#a58e71de216f017b56e969befbba3a046",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="SysTick_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_timer_8c.html#afc1771f901416eb77d0c6acf4052ef4a",tooltip=" "];
+}

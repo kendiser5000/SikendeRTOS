@@ -1,0 +1,37 @@
+digraph "StartCritical"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="StartCritical",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Timer0A_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_timer_8c.html#a1f9f3c8e9e768dee252af6e09ebf3129",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Peripheral_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_8c.html#a4e1ed1b33e454c5906df521dcec8a3a6",tooltip="This function initializes extra IO used by OS, add new inits here."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="OS_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_8c.html#acb6df8f47f418aad9c9a9e045d7d1e6d",tooltip="initialize operating system, disable interrupts until OS_Launch initialize OS controlled I/O: serial,..."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe",tooltip="Example usecase of RTOS."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Timer0B_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_timer_8c.html#aae3647c92f6dde0904217bcc18cc2c0b",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Timer1A_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_timer_8c.html#aad0b7361116084cb820d8fedebc8c4d4",tooltip=" "];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="OS_AddPeriodicThread",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_8c.html#a11987152f9e3687cf35e7aa94793f1fc",tooltip="Adds periodic background thread. Cannot spin, sleep, die, rest, etc. cause it's ISR,..."];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Timer1B_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_timer_8c.html#a2ac2bddbff828503c4f60f6d7e630dd7",tooltip=" "];
+  Node9 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Timer3A_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_timer_8c.html#ab634674663d0c1f9d5a161b230b9beb9",tooltip=" "];
+  Node10 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Timer3B_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_timer_8c.html#ad88cb421b298e3246fc07a5d779ac152",tooltip=" "];
+  Node11 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Timer4A_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_timer_8c.html#a710c63b1c81479808b1206f4fd5b507b",tooltip=" "];
+  Node12 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="Timer4B_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_timer_8c.html#a965744d1b32a7d50bbe29dcc16bdb784",tooltip=" "];
+  Node13 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

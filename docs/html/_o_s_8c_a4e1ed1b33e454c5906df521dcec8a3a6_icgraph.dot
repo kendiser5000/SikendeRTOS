@@ -1,0 +1,12 @@
+digraph "Peripheral_Init"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Peripheral_Init",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This function initializes extra IO used by OS, add new inits here."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="OS_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_8c.html#acb6df8f47f418aad9c9a9e045d7d1e6d",tooltip="initialize operating system, disable interrupts until OS_Launch initialize OS controlled I/O: serial,..."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe",tooltip="Example usecase of RTOS."];
+}

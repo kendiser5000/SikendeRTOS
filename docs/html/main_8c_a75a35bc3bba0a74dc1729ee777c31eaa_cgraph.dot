@@ -1,0 +1,12 @@
+digraph "Flash_Red2"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Flash_Red2",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Blink Red LED."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="OS_ASM_Signal",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_8h.html#afa138310e41aca278f05cdd4fe7cc769",tooltip="Spinlock semaphore signal using ARM exclusion."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="OS_ASM_Wait",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_8h.html#af6e627ead72fd74925e9fb1307ed2542",tooltip="Spinlock semaphore wait using ARM exclusion."];
+}
