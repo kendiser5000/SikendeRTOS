@@ -12,7 +12,7 @@ Atm I use the Keil IDE; however, this can be ported over to a makefile based pro
 
 The API functions for the OS are documented by Doxygen and are all included in [OS.h](https://www.sikenderaliashraf.com/SikendeRTOS/html/_o_s_8c.html)
 
-The parameters for the OS can be configured in (OSConfig.h)[https://www.sikenderaliashraf.com/SikendeRTOS/html/_o_s_config_8h.html]. **Make sure to adjust the timer values according to the HW used!**
+The parameters for the OS can be configured in [OSConfig.h](https://www.sikenderaliashraf.com/SikendeRTOS/html/_o_s_config_8h.html). **Make sure to adjust the timer values according to the HW used!**
 
 # Project Structure
 The project/file structure is broken down into the following:
